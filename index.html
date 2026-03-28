@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello Texas — Official Music</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --red:    #BF1A1A;
+  --blue:   #1A2D5A;
+  --white:  #F5F0E8;
+  --cream:  #EDE6D6;
+  --gold:   #C8942A;
+  --dust:   #8A7860;
+  --dark:   #0E0A06;
+  --font-display: 'Playfair Display', serif;
+  --font-body:    'Source Serif 4', serif;
+  --font-ui:      'Oswald', sans-serif;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--dark);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* ── TEXAS FLAG TEXTURE HERO BG ────────────────────────────── */
+.flag-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+/* Blue canton left third */
+.flag-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 33.33%;
+  height: 100%;
+  background: var(--blue);
+  opacity: 0.85;
+}
+/* Red stripe top right */
+.flag-bg .red-stripe {
+  position: absolute;
+  top: 0; left: 33.33%; right: 0;
+  height: 50%;
+  background: var(--red);
+  opacity: 0.75;
+}
+/* White stripe bottom right */
+.flag-bg .white-stripe {
+  position: absolute;
+  bottom: 0; left: 33.33%; right: 0;
+  height: 50%;
+  background: rgba(245,240,232,0.15);
+}
+/* Star */
+.flag-bg .star {
+  position: absolute;
+  left: calc(33.33% / 2);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(4rem, 8vw, 7rem);
+  color: var(--white);
+  opacity: 0.9;
+  line-height: 1;
+  text-shadow: 0 0 60px rgba(245,240,232,0.3);
+}
+/* Dark overlay for readability */
+.flag-bg .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(14,10,6,0.45) 0%, rgba(14,10,6,0.7) 60%, rgba(14,10,6,0.85) 100%);
+}
+
+/* ── NAV ───────────────────────────────────────────────────── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(to bottom, rgba(14,10,6,0.9), transparent);
+  transition: background 0.3s;
+}
+nav.scrolled { background: rgba(14,10,6,0.97); border-bottom: 1px solid rgba(200,148,42,0.15); }
+.nav-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.nav-name span { color: var(--red); }
+.nav-links { display: flex; gap: 1.8rem; list-style: none; }
+.nav-links a {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(245,240,232,0.5);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--white); }
+
+/* ── HERO ──────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 6rem 6%;
+  overflow: hidden;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  animation: fadein 1s 0.2s both;
+}
+.hero-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+  font-weight: 300;
+}
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 9vw, 7.5rem);
+  font-weight: 900;
+  line-height: 0.9;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+  text-shadow: 0 4px 30px rgba(0,0,0,0.5);
+}
+.hero-name .tx { color: var(--red); }
+.hero-tagline {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: rgba(245,240,232,0.65);
+  font-style: italic;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+.hero-cta-row { display: flex; gap: 0.8rem; }
+.hero-cta {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.55rem 1.5rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.hero-cta.primary { background: var(--red); color: var(--white); }
+.hero-cta.primary:hover { background: #D42020; }
+.hero-cta.secondary { border: 1px solid rgba(245,240,232,0.3); color: var(--white); }
+.hero-cta.secondary:hover { border-color: var(--white); background: rgba(245,240,232,0.05); }
+
+@keyframes fadein { from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);} }
+
+/* ── BIO ───────────────────────────────────────────────────── */
+#bio {
+  padding: 5rem 0;
+  background: #120D08;
+  border-top: 1px solid rgba(200,148,42,0.12);
+}
+.bio-inner { max-width: 720px; margin: 0 auto; padding: 0 2rem; text-align: center; }
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  display: flex; align-items: center; justify-content: center; gap: 1rem;
+}
+.eyebrow::before, .eyebrow::after { content:''; width:40px; height:1px; background:linear-gradient(to right,transparent,rgba(200,148,42,0.45)); }
+.eyebrow::after { background:linear-gradient(to left,transparent,rgba(200,148,42,0.45)); }
+.bio-text { font-size:1.1rem; color:rgba(245,240,232,0.65); font-style:italic; line-height:1.95; }
+.bio-text strong { color:var(--white); font-style:normal; }
+
+/* ── ALBUM SECTIONS ────────────────────────────────────────── */
+.album-section { padding:5rem 0; border-top:1px solid rgba(30,20,10,0.9); }
+.album-section.a1 { background:#0E0A06; }
+.album-section.a2 { background:#110C07; }
+.album-section.a3 { background:#0A0608; }
+
+.album-wrap { max-width:1000px; margin:0 auto; padding:0 2rem; }
+.album-layout { display:grid; grid-template-columns:240px 1fr; gap:3.5rem; align-items:start; }
+.album-art-wrap { position:sticky; top:90px; }
+.album-art-placeholder {
+  width:100%; aspect-ratio:1;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.6rem;
+}
+.a1 .album-art-placeholder { background:linear-gradient(135deg,#1A2D5A,#0E1830); border:1px solid rgba(200,148,42,0.2); }
+.a2 .album-art-placeholder { background:linear-gradient(135deg,#2A1408,#180C04); border:1px solid rgba(200,148,42,0.2); }
+.a3 .album-art-placeholder { background:linear-gradient(135deg,#1A0A0A,#0A0408); border:1px solid rgba(180,20,20,0.3); }
+.ph-star { font-size:2.5rem; opacity:0.2; color:var(--white); }
+.ph-label { font-family:var(--font-ui); font-size:0.52rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(245,240,232,0.3); }
+
+.album-tag { font-family:var(--font-ui); font-size:0.58rem; letter-spacing:0.28em; text-transform:uppercase; margin-bottom:0.35rem; font-weight:400; }
+.a1 .album-tag { color:rgba(200,148,42,0.7); }
+.a2 .album-tag { color:rgba(200,148,42,0.7); }
+.a3 .album-tag { color:rgba(180,40,40,0.85); }
+.album-title-text { font-family:var(--font-display); font-size:2rem; font-weight:700; line-height:1.15; margin-bottom:0.2rem; color:var(--white); }
+.album-artist { font-family:var(--font-ui); font-size:0.68rem; letter-spacing:0.15em; color:var(--dust); margin-bottom:1rem; font-weight:300; }
+.album-desc { font-family:var(--font-body); font-size:0.98rem; color:rgba(245,240,232,0.5); line-height:1.8; margin-bottom:1.3rem; max-width:460px; font-style:italic; }
+.stream-row { display:flex; gap:0.6rem; flex-wrap:wrap; margin-bottom:1.5rem; }
+.stream-btn {
+  font-family:var(--font-ui); font-size:0.57rem; letter-spacing:0.15em; text-transform:uppercase;
+  font-weight:600; padding:0.38rem 0.9rem; border:1px solid; text-decoration:none; transition:all 0.2s; background:none; cursor:pointer;
+}
+.a1 .stream-btn, .a2 .stream-btn { color:var(--gold); border-color:rgba(200,148,42,0.3); }
+.a1 .stream-btn:hover, .a2 .stream-btn:hover { background:rgba(200,148,42,0.08); border-color:var(--gold); }
+.a3 .stream-btn { color:#E07070; border-color:rgba(180,40,40,0.35); }
+.a3 .stream-btn:hover { background:rgba(180,40,40,0.1); border-color:#C04040; }
+
+/* AGE BADGE */
+.age-badge {
+  display:inline-flex; align-items:center; gap:0.5rem;
+  font-family:var(--font-ui); font-size:0.58rem; letter-spacing:0.2em; text-transform:uppercase;
+  font-weight:700; color:#E07070; border:1px solid rgba(180,40,40,0.4); padding:0.28rem 0.8rem; margin-bottom:0.8rem;
+}
+
+/* TRACKLIST */
+.tracklist { border-top:1px solid rgba(245,240,232,0.08); padding-top:0.5rem; margin-top:1.5rem; }
+.track-row {
+  display:grid; grid-template-columns:32px 1fr 36px;
+  align-items:center; gap:0.75rem;
+  padding:0.6rem 0.4rem; border-bottom:1px solid rgba(245,240,232,0.06);
+  border-radius:3px; transition:background 0.15s;
+}
+.track-row:hover { background:rgba(200,148,42,0.04); }
+.a3 .track-row:hover { background:rgba(180,40,40,0.04); }
+.track-num { font-family:var(--font-ui); font-size:0.62rem; text-align:right; font-weight:300; }
+.a1 .track-num, .a2 .track-num { color:rgba(200,148,42,0.38); }
+.a3 .track-num { color:rgba(180,40,40,0.4); }
+.track-title { font-family:var(--font-body); font-size:1rem; color:var(--white); }
+.track-play-btn {
+  width:32px; height:32px; border-radius:50%; background:none;
+  cursor:pointer; font-size:0.55rem; display:flex; align-items:center; justify-content:center;
+  padding-left:2px; transition:all 0.18s;
+}
+.a1 .track-play-btn, .a2 .track-play-btn { color:var(--gold); border:1px solid rgba(200,148,42,0.3); }
+.a1 .track-play-btn:hover, .a2 .track-play-btn:hover { background:rgba(200,148,42,0.12); border-color:var(--gold); }
+.a1 .track-play-btn.playing, .a2 .track-play-btn.playing { background:var(--gold); color:var(--dark); border-color:var(--gold); }
+.a3 .track-play-btn { color:#E07070; border:1px solid rgba(180,40,40,0.3); }
+.a3 .track-play-btn:hover { background:rgba(180,40,40,0.12); border-color:#C04040; }
+.a3 .track-play-btn.playing { background:#BF1A1A; color:var(--white); border-color:#BF1A1A; }
+
+/* ── AGE GATE MODAL ────────────────────────────────────────── */
+#age-gate {
+  display:none; position:fixed; inset:0; z-index:500;
+  background:rgba(10,6,8,0.95); backdrop-filter:blur(8px);
+  align-items:center; justify-content:center;
+}
+#age-gate.active { display:flex; }
+.age-gate-box {
+  background:#1A0A0A; border:1px solid rgba(180,40,40,0.4);
+  padding:3.5rem 3rem; max-width:440px; width:90%; text-align:center;
+}
+.age-gate-icon { font-size:2.5rem; margin-bottom:1rem; opacity:0.7; }
+.age-gate-title { font-family:var(--font-display); font-size:1.6rem; font-weight:700; color:var(--white); margin-bottom:0.5rem; }
+.age-gate-sub { font-family:var(--font-ui); font-size:0.62rem; letter-spacing:0.3em; text-transform:uppercase; color:#E07070; margin-bottom:1.2rem; font-weight:400; }
+.age-gate-text { font-family:var(--font-body); font-size:0.95rem; color:rgba(245,240,232,0.55); font-style:italic; line-height:1.7; margin-bottom:2rem; }
+.age-gate-btns { display:flex; gap:0.8rem; justify-content:center; }
+.age-yes {
+  font-family:var(--font-ui); font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase; font-weight:700;
+  padding:0.55rem 1.8rem; background:#BF1A1A; color:var(--white); border:none; cursor:pointer; transition:background 0.2s;
+}
+.age-yes:hover { background:#D42020; }
+.age-no {
+  font-family:var(--font-ui); font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase; font-weight:600;
+  padding:0.55rem 1.8rem; border:1px solid rgba(245,240,232,0.2); color:rgba(245,240,232,0.5); background:none; cursor:pointer; transition:all 0.2s;
+}
+.age-no:hover { border-color:rgba(245,240,232,0.4); color:rgba(245,240,232,0.8); }
+
+/* ── PLAYER ────────────────────────────────────────────────── */
+#player {
+  position:fixed; bottom:0; left:0; right:0; z-index:200;
+  background:rgba(10,6,4,0.97); border-top:1px solid rgba(200,148,42,0.18);
+  backdrop-filter:blur(14px); display:none;
+  grid-template-columns:220px 1fr 180px; align-items:center; gap:1.5rem; padding:0.75rem 2rem;
+  transform:translateY(100%); transition:transform 0.3s cubic-bezier(0.16,1,0.3,1);
+}
+#player.visible { display:grid; transform:translateY(0); }
+.p-info { display:flex; flex-direction:column; gap:0.1rem; min-width:0; }
+.p-title { font-family:var(--font-body); font-size:0.95rem; color:var(--white); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.p-album { font-family:var(--font-ui); font-size:0.52rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); opacity:0.6; }
+.p-controls { display:flex; flex-direction:column; align-items:center; gap:0.35rem; }
+.p-btns { display:flex; align-items:center; gap:0.9rem; }
+.p-btn { background:none; border:none; color:rgba(245,240,232,0.4); cursor:pointer; font-size:0.7rem; transition:color 0.15s; }
+.p-btn:hover { color:var(--white); }
+.p-play { width:36px; height:36px; border-radius:50%; background:var(--gold); border:none; color:var(--dark); cursor:pointer; font-size:0.85rem; display:flex; align-items:center; justify-content:center; transition:transform 0.15s; padding-left:2px; }
+.p-play:hover { transform:scale(1.1); }
+.p-prog { display:flex; align-items:center; gap:0.5rem; width:100%; }
+.p-time { font-family:var(--font-ui); font-size:0.52rem; color:rgba(245,240,232,0.3); min-width:26px; text-align:center; }
+.p-bar { flex:1; height:2px; background:rgba(245,240,232,0.1); border-radius:1px; cursor:pointer; }
+.p-fill { height:100%; background:linear-gradient(to right,var(--red),var(--gold)); border-radius:1px; width:0%; pointer-events:none; }
+.p-right { display:flex; align-items:center; gap:0.75rem; justify-content:flex-end; }
+.p-vol { -webkit-appearance:none; width:75px; height:2px; background:rgba(245,240,232,0.12); outline:none; cursor:pointer; }
+.p-vol::-webkit-slider-thumb { -webkit-appearance:none; width:10px; height:10px; border-radius:50%; background:var(--gold); cursor:pointer; }
+.p-close { background:none; border:none; color:rgba(245,240,232,0.22); cursor:pointer; font-size:0.7rem; transition:color 0.2s; }
+.p-close:hover { color:rgba(245,240,232,0.55); }
+
+/* ── FOOTER ────────────────────────────────────────────────── */
+footer { background:#080504; border-top:1px solid rgba(30,20,10,0.9); padding:3rem 2rem; text-align:center; margin-bottom:60px; }
+.foot-name { font-family:var(--font-display); font-size:1.2rem; font-weight:900; color:var(--white); margin-bottom:0.3rem; }
+.foot-name span { color:var(--red); }
+.foot-label { font-family:var(--font-ui); font-size:0.55rem; letter-spacing:0.4em; text-transform:uppercase; color:rgba(200,148,42,0.35); margin-bottom:1.3rem; }
+.foot-links { display:flex; gap:1.5rem; justify-content:center; }
+.foot-links a { font-family:var(--font-ui); font-size:0.55rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(200,148,42,0.35); text-decoration:none; transition:color 0.2s; }
+.foot-links a:hover { color:var(--gold); }
+
+@media(max-width:768px) {
+  .album-layout { grid-template-columns:1fr; }
+  .album-art-wrap { position:static; max-width:200px; }
+  #player { grid-template-columns:1fr; gap:0.4rem; padding:0.6rem 1rem; }
+  .p-right { justify-content:center; }
+  .nav-links { gap:1rem; }
+  .hero { padding-left:5%; padding-bottom:4rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div id="age-gate">
+  <div class="age-gate-box">
+    <div class="age-gate-icon">🤠</div>
+    <div class="age-gate-title">TeXXXas Tales</div>
+    <div class="age-gate-sub">18+ Content</div>
+    <p class="age-gate-text">This album contains explicit content, colorful language, and the kind of stories your mama didn't raise you to tell. Are you 18 or older?</p>
+    <div class="age-gate-btns">
+      <button class="age-yes" onclick="approveAge()">Yes, I'm 18+</button>
+      <button class="age-no" onclick="denyAge()">No, Take Me Back</button>
+    </div>
+  </div>
+</div>
+
+<nav id="topnav">
+  <a href="#" class="nav-name">Hello <span>Texas</span></a>
+  <ul class="nav-links">
+    <li><a href="#bio">About</a></li>
+    <li><a href="#album1">That Texas Sound</a></li>
+    <li><a href="#album2">Messin' Round</a></li>
+    <li><a href="#album3" onclick="checkAge(event)">TeXXXas Tales</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="flag-bg">
+    <div class="red-stripe"></div>
+    <div class="white-stripe"></div>
+    <div class="star">★</div>
+    <div class="overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Hello Texas Records</div>
+    <h1 class="hero-name">Hello<br><span class="tx">Texas</span></h1>
+    <p class="hero-tagline">Red dirt, real stories, and the sound of a state that doesn't apologize for any of it.</p>
+    <div class="hero-cta-row">
+      <a href="#album1" class="hero-cta primary">Listen Now</a>
+      <a href="#bio" class="hero-cta secondary">About</a>
+    </div>
+  </div>
+</section>
+
+<!-- BIO -->
+<section id="bio">
+  <div class="bio-inner">
+    <div class="eyebrow">About</div>
+    <p class="bio-text">
+      <strong>Hello Texas</strong> is Red Dirt country with no filter and no apologies. Three albums, zero polish, and every song sounds like it was written on a tailgate somewhere between Lubbock and the state line. The kind of band that plays the same bar three nights in a row and sells it out every time.
+    </p>
+  </div>
+</section>
+
+<!-- THAT TEXAS SOUND -->
+<section id="album1" class="album-section a1">
+  <div class="album-wrap">
+    <div class="album-layout">
+      <div class="album-art-wrap">
+        <div class="album-art-placeholder"><div class="ph-star">★</div><span class="ph-label">Album Art</span></div>
+      </div>
+      <div class="album-info">
+        <div class="album-tag">Country · Red Dirt · Americana</div>
+        <div class="album-title-text">That Texas Sound</div>
+        <div class="album-artist">Hello Texas</div>
+        <p class="album-desc">The debut. Five songs that sound like where they came from — dust roads, honky tonks, and the kind of quiet that only exists in wide open spaces.</p>
+        <div class="stream-row">
+          <a href="#" class="stream-btn">&#9654; Spotify</a>
+          <a href="#" class="stream-btn">&#9834; Apple Music</a>
+        </div>
+        <div class="tracklist">
+          <div class="track-row"><span class="track-num">01</span><span class="track-title">That Texas Sound</span><button class="track-play-btn" onclick="playTrack('tts_1')">&#9654;</button></div>
+          <div class="track-row"><span class="track-num">02</span><span class="track-title">Silence Don't Scare Me Anymore</span><button class="track-play-btn" onclick="playTrack('tts_2')">&#9654;</button></div>
+          <div class="track-row"><span class="track-num">03</span><span class="track-title">5 Hours 8 Minutes</span><button class="track-play-btn" onclick="playTrack('tts_3')">&#9654;</button></div>
+          <div class="track-row"><span class="track-num">04</span><span class="track-title">Fade Out</span><button class="track-play-btn" onclick="playTrack('tts_4')">&#9654;</button></div>
+          <div class="track-row"><span class="track-num">05</span><span class="track-title">Same Damn Band</span><button class="track-play-btn" onclick="playTrack('tts_5')">&#9654;</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MESSIN' ROUND -->
+<section id="album2" class="album-section a2">
+  <div class="album-wrap">
+    <div class="album-layout">
+      <div class="album-art-wrap">
+        <div class="album-art-placeholder"><div class="ph-star">★</div><span class="ph-label">Album Art</span></div>
+      </div>
+      <div class="album-info">
+        <div class="album-tag">Country · Red Dirt · Good Times</div>
+        <div class="album-title-text">Messin' Round</div>
+        <div class="album-artist">Hello Texas</div>
+        <p class="album-desc">Three songs about good intentions, bad decisions, and a bar with a broken tap. The sophomore record. Shorter, looser, and considerably more fun.</p>
+        <div class="stream-row">
+          <a href="#" class="stream-btn">&#9654; Spotify</a>
+          <a href="#" class="stream-btn">&#9834; Apple Music</a>
+        </div>
+        <div class="tracklist">
+          <div class="track-row"><span class="track-num">01</span><span class="track-title">Good Intentions</span><button class="track-play-btn" onclick="playTrack('mr_1')">&#9654;</button></div>
+          <div class="track-row"><span class="track-num">02</span><span class="track-title">It's Not the End of the World</span><button class="track-play-btn" onclick="playTrack('mr_2')">&#9654;</button></div>
+          <div class="track-row"><span class="track-num">03</span><span class="track-title">The Booze is Broken</span><button class="track-play-btn" onclick="playTrack('mr_3')">&#9654;</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEXXXAS TALES — gated -->
+<section id="album3" class="album-section a3" style="display:none;">
+  <div class="album-wrap">
+    <div class="album-layout">
+      <div class="album-art-wrap">
+        <div class="album-art-placeholder"><div class="ph-star">🤠</div><span class="ph-label">Album Art</span></div>
+      </div>
+      <div class="album-info">
+        <div class="age-badge">&#128286; Explicit · 18+</div>
+        <div class="album-tag">Country · Red Dirt · Unfiltered</div>
+        <div class="album-title-text">TeXXXas Tales</div>
+        <div class="album-artist">Hello Texas</div>
+        <p class="album-desc">Not for the faint of heart, the easily offended, or anyone who still uses the word "gracious." Three songs. Zero regrets.</p>
+        <div class="stream-row">
+          <a href="#" class="stream-btn">&#9654; Spotify</a>
+          <a href="#" class="stream-btn">&#9834; Apple Music</a>
+        </div>
+        <div class="tracklist">
+          <div class="track-row"><span class="track-num">01</span><span class="track-title">No Hand-Jobs in the Parking Lots</span><button class="track-play-btn" onclick="playTrack('txt_1')">&#9654;</button></div>
+          <div class="track-row"><span class="track-num">02</span><span class="track-title">Fuck Them Fish</span><button class="track-play-btn" onclick="playTrack('txt_2')">&#9654;</button></div>
+          <div class="track-row"><span class="track-num">03</span><span class="track-title">All Hat, No Shit</span><button class="track-play-btn" onclick="playTrack('txt_3')">&#9654;</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-name">Hello <span>Texas</span></div>
+  <div class="foot-label">Hello Texas Records</div>
+  <div class="foot-links">
+    <a href="#">Spotify</a>
+    <a href="#">Apple Music</a>
+    <a href="#">YouTube</a>
+    <a href="#">Instagram</a>
+  </div>
+</footer>
+
+<audio id="audio" preload="none" playsinline webkit-playsinline x-webkit-airplay="allow">
+  <source id="audio-src" src="" type="audio/mpeg">
+</audio>
+
+<div id="player">
+  <div class="p-info">
+    <div class="p-title" id="p-title">—</div>
+    <div class="p-album" id="p-album">Hello Texas</div>
+  </div>
+  <div class="p-controls">
+    <div class="p-btns">
+      <button class="p-btn" id="p-prev">&#9664;&#9664;</button>
+      <button class="p-play" id="p-playbtn">&#9654;</button>
+      <button class="p-btn" id="p-next">&#9654;&#9654;</button>
+    </div>
+    <div class="p-prog">
+      <span class="p-time" id="p-cur">0:00</span>
+      <div class="p-bar" id="p-bar"><div class="p-fill" id="p-fill"></div></div>
+      <span class="p-time" id="p-dur">0:00</span>
+    </div>
+  </div>
+  <div class="p-right">
+    <input type="range" class="p-vol" id="p-vol" min="0" max="1" step="0.02" value="0.85">
+    <button class="p-close" id="p-close">&#10005;</button>
+  </div>
+</div>
+
+<script>
+const TRACKS = {
+  tts_1:{title:'That Texas Sound',           album:'That Texas Sound', src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_TTS_01/track.mp3?dl=1'},
+  tts_2:{title:"Silence Don't Scare Me Anymore", album:'That Texas Sound', src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_TTS_02/track.mp3?dl=1'},
+  tts_3:{title:'5 Hours 8 Minutes',          album:'That Texas Sound', src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_TTS_03/track.mp3?dl=1'},
+  tts_4:{title:'Fade Out',                   album:'That Texas Sound', src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_TTS_04/track.mp3?dl=1'},
+  tts_5:{title:'Same Damn Band',             album:'That Texas Sound', src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_TTS_05/track.mp3?dl=1'},
+  mr_1: {title:'Good Intentions',            album:"Messin' Round",    src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_MR_01/track.mp3?dl=1'},
+  mr_2: {title:"It's Not the End of the World", album:"Messin' Round", src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_MR_02/track.mp3?dl=1'},
+  mr_3: {title:'The Booze is Broken',        album:"Messin' Round",    src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_MR_03/track.mp3?dl=1'},
+  txt_1:{title:'No Hand-Jobs in the Parking Lots', album:'TeXXXas Tales', src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_TXT_01/track.mp3?dl=1'},
+  txt_2:{title:'Fuck Them Fish',             album:'TeXXXas Tales',    src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_TXT_02/track.mp3?dl=1'},
+  txt_3:{title:'All Hat, No Shit',           album:'TeXXXas Tales',    src:'https://www.dropbox.com/scl/fi/PLACEHOLDER_TXT_03/track.mp3?dl=1'},
+};
+const ALL = ['tts_1','tts_2','tts_3','tts_4','tts_5','mr_1','mr_2','mr_3','txt_1','txt_2','txt_3'];
+let ageVerified = sessionStorage.getItem('ht_age_ok') === 'true';
+let cur = null;
+const audio = document.getElementById('audio');
+const player = document.getElementById('player');
+
+// Age gate
+function checkAge(e) {
+  if(!ageVerified) {
+    e.preventDefault();
+    document.getElementById('age-gate').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+function approveAge() {
+  ageVerified = true;
+  sessionStorage.setItem('ht_age_ok','true');
+  document.getElementById('age-gate').classList.remove('active');
+  document.body.style.overflow = '';
+  document.getElementById('album3').style.display = 'block';
+  document.getElementById('album3').scrollIntoView({behavior:'smooth'});
+}
+function denyAge() {
+  document.getElementById('age-gate').classList.remove('active');
+  document.body.style.overflow = '';
+}
+// Show album3 if already verified
+if(ageVerified) document.getElementById('album3').style.display = 'block';
+
+function fmt(s){if(isNaN(s))return'0:00';const m=Math.floor(s/60),sec=Math.floor(s%60);return m+':'+(sec<10?'0':'')+sec;}
+function setPlaying(id,playing){
+  document.querySelectorAll('.track-play-btn').forEach(b=>{
+    const tid=b.getAttribute('onclick').match(/'([^']+)'/)?.[1];
+    b.innerHTML=(tid===id&&playing)?'&#9646;&#9646;':'&#9654;';
+    b.classList.toggle('playing',tid===id&&playing);
+  });
+  document.getElementById('p-playbtn').innerHTML=playing?'&#9646;&#9646;':'&#9654;';
+}
+function playTrack(id){
+  // Check age gate for TeXXXas Tales tracks
+  if(id.startsWith('txt_')&&!ageVerified){
+    document.getElementById('age-gate').classList.add('active');
+    document.body.style.overflow='hidden';
+    return;
+  }
+  const t=TRACKS[id];if(!t)return;
+  if(cur===id){if(audio.paused){audio.play().catch(()=>{});setPlaying(id,true);}else{audio.pause();setPlaying(id,false);}return;}
+  cur=id;audio.crossOrigin='anonymous';audio.src=t.src;
+  document.getElementById('audio-src').src=t.src;audio.load();audio.play().catch(()=>{});
+  document.getElementById('p-title').textContent=t.title;
+  document.getElementById('p-album').textContent=t.album;
+  player.style.display='grid';setTimeout(()=>player.classList.add('visible'),10);
+  setPlaying(id,true);
+}
+audio.addEventListener('timeupdate',()=>{
+  const pct=audio.duration?(audio.currentTime/audio.duration)*100:0;
+  document.getElementById('p-fill').style.width=pct+'%';
+  document.getElementById('p-cur').textContent=fmt(audio.currentTime);
+  document.getElementById('p-dur').textContent=fmt(audio.duration);
+});
+audio.addEventListener('ended',()=>{const idx=ALL.indexOf(cur);if(idx<ALL.length-1)playTrack(ALL[idx+1]);else setPlaying(cur,false);});
+document.getElementById('p-playbtn').addEventListener('click',()=>{if(!cur)return;if(audio.paused){audio.play().catch(()=>{});setPlaying(cur,true);}else{audio.pause();setPlaying(cur,false);}});
+document.getElementById('p-prev').addEventListener('click',()=>{if(!cur)return;const idx=ALL.indexOf(cur);if(audio.currentTime>3){audio.currentTime=0;return;}if(idx>0)playTrack(ALL[idx-1]);});
+document.getElementById('p-next').addEventListener('click',()=>{if(!cur)return;const idx=ALL.indexOf(cur);if(idx<ALL.length-1)playTrack(ALL[idx+1]);});
+document.getElementById('p-bar').addEventListener('click',e=>{if(!audio.duration)return;const r=e.currentTarget.getBoundingClientRect();audio.currentTime=((e.clientX-r.left)/r.width)*audio.duration;});
+document.getElementById('p-vol').addEventListener('input',e=>{audio.volume=e.target.value;});
+document.getElementById('p-close').addEventListener('click',()=>{audio.pause();player.classList.remove('visible');setTimeout(()=>player.style.display='none',350);setPlaying(cur,false);cur=null;});
+const nav=document.getElementById('topnav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>60);});
+</script>
+</body>
+</html>
