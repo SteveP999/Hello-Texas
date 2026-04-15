@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XC39X7LFRH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XC39X7LFRH');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello Texas — Texas Country</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600&family=Source+Sans+3:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --black:   #08080A;
+  --ink:     #0D0C10;
+  --navy:    #0A0C14;
+  --deep:    #101218;
+  --red:     #C41A1A;
+  --red-lt:  #E03030;
+  --blue:    #1A3A8A;
+  --blue-lt: #2A5ACC;
+  --white:   #F0EEF8;
+  --silver:  #C8C4D4;
+  --mist:    #7A7890;
+  --star:    #E8D060;
+}
+html { scroll-behavior: smooth; }
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* ── NAV ─────────────────────────────────────────────────────────────────── */
+#topnav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 2.5rem; height: 64px;
+  background: transparent; border-bottom: 1px solid transparent;
+  transition: background 0.4s, border-color 0.4s;
+}
+#topnav.scrolled {
+  background: rgba(8,8,10,0.95);
+  border-color: rgba(196,26,26,0.25);
+  backdrop-filter: blur(12px);
+}
+.nav-wordmark {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem; letter-spacing: 0.08em;
+  color: var(--white); text-decoration: none;
+  text-shadow: 0 0 20px rgba(196,26,26,0.4);
+}
+.nav-wordmark span { color: var(--red); }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  color: var(--mist); text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--red-lt); }
+
+/* ── HERO ─────────────────────────────────────────────────────────────────── */
+.hero {
+  position: relative; height: 100vh; min-height: 640px;
+  display: flex; align-items: flex-end; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url("https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/hero-background.png");
+}
+.hero-vignette {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(8,8,10,0.55) 0%, rgba(8,8,10,0.1) 30%, rgba(8,8,10,0.1) 50%, rgba(8,8,10,0.97) 100%),
+    linear-gradient(to right, rgba(8,8,10,0.7) 0%, transparent 55%);
+}
+.hero-content {
+  position: relative; z-index: 2;
+  padding: 0 3.5rem 5rem; max-width: 620px;
+}
+.hero-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 0.9; letter-spacing: 0.04em;
+  color: var(--white); margin-bottom: 0.5rem;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.8);
+}
+.hero-name .texas { color: var(--red); display: block; }
+.hero-sub {
+  font-family: 'Oswald', sans-serif; font-weight: 300;
+  font-size: 0.7rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--silver); opacity: 0.7; margin-bottom: 2rem;
+}
+.hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+.cta-primary {
+  background: var(--red); color: var(--white); border: none;
+  padding: 0.8rem 2rem;
+  font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+.cta-primary:hover { background: var(--red-lt); transform: translateY(-1px); }
+.cta-secondary {
+  background: transparent; color: var(--white);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.8rem 2rem; text-decoration: none; display: inline-block;
+  font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 300;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  transition: border-color 0.2s, color 0.2s;
+}
+.cta-secondary:hover { border-color: var(--red); color: var(--red-lt); }
+
+/* ── SECTION CHROME ──────────────────────────────────────────────────────── */
+.section-header { text-align: center; padding: 5rem 2rem 3.5rem; }
+.section-eyebrow {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.65rem; letter-spacing: 0.35em; text-transform: uppercase;
+  color: var(--red); margin-bottom: 0.75rem;
+}
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: 0.06em;
+  color: var(--white);
+}
+.tx-rule {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0.8rem; margin-top: 1.2rem;
+}
+.tx-rule-line { flex: 0 0 32px; height: 1px; background: var(--red); opacity: 0.6; }
+.tx-star { color: var(--star); font-size: 0.7rem; }
+
+/* ── BIO ──────────────────────────────────────────────────────────────────── */
+#bio { background: var(--navy); padding-bottom: 5rem; }
+.bio-inner { max-width: 680px; margin: 0 auto; padding: 0 2rem; text-align: center; }
+.bio-inner p { color: var(--mist); line-height: 1.95; font-size: 0.95rem; margin-bottom: 1.2rem; }
+
+/* ── SINGLES GRID ─────────────────────────────────────────────────────────── */
+#singles { background: var(--ink); padding: 5rem 0; border-top: 1px solid rgba(196,26,26,0.15); }
+.singles-grid {
+  max-width: 1080px; margin: 0 auto; padding: 0 2.5rem;
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.2rem;
+}
+.single-card { cursor: pointer; }
+.single-img-wrap { position: relative; overflow: hidden; aspect-ratio: 1; }
+.single-img-wrap img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.45s, filter 0.4s; filter: brightness(0.75) saturate(0.9);
+}
+.single-card:hover .single-img-wrap img { transform: scale(1.05); filter: brightness(1) saturate(1.1); }
+.single-overlay {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: rgba(8,8,10,0); transition: background 0.3s;
+}
+.single-card:hover .single-overlay { background: rgba(8,8,10,0.4); }
+.single-play-btn {
+  width: 44px; height: 44px; border: 2px solid var(--red);
+  background: rgba(8,8,10,0.6); color: var(--red); font-size: 0.9rem;
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+  opacity: 0; transform: scale(0.8); transition: opacity 0.25s, transform 0.25s;
+}
+.single-card:hover .single-play-btn,
+.single-play-btn.playing { opacity: 1; transform: scale(1); }
+.single-info { padding: 0.75rem 0 0; }
+.single-title {
+  font-family: 'Oswald', sans-serif; font-weight: 400;
+  font-size: 0.82rem; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--white); margin-bottom: 0.2rem; line-height: 1.3;
+}
+.single-sub {
+  font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--mist); opacity: 0.6;
+}
+.single-badge {
+  display: inline-block; font-size: 0.52rem; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--red);
+  border: 1px solid rgba(196,26,26,0.45); padding: 0.15rem 0.5rem; margin-left: 0.4rem;
+}
+
+/* ── STREAMING LINKS ─────────────────────────────────────────────────────── */
+.single-streams { display: flex; gap: 0.3rem; margin-top: 0.5rem; flex-wrap: wrap; }
+.ss-btn { font-size: 0.48rem; letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 0.18rem 0.5rem; border-radius: 2px; text-decoration: none;
+  font-weight: 700; transition: opacity 0.2s; display: inline-block; line-height: 1.6; }
+.ss-btn:hover { opacity: 0.75; }
+.ss-spotify { background: #1DB954; color: #000; }
+.ss-apple   { background: #fc3c44; color: #fff; }
+.ss-ytm     { background: #FF0000; color: #fff; }
+.ss-video   { background: #333;    color: #fff; }
+
+/* ── ALBUM ────────────────────────────────────────────────────────────────── */
+#album { background: var(--deep); padding: 5rem 0; border-top: 1px solid rgba(196,26,26,0.12); }
+.album-layout {
+  max-width: 1040px; margin: 0 auto; padding: 0 2.5rem;
+  display: grid; grid-template-columns: 380px 1fr; gap: 4.5rem; align-items: start;
+}
+.album-cover {
+  width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.8), 0 0 0 1px rgba(196,26,26,0.15);
+}
+.album-badge {
+  display: inline-block; font-family: 'Oswald', sans-serif;
+  font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--red); border: 1px solid rgba(196,26,26,0.4);
+  padding: 0.25rem 0.75rem; margin-bottom: 1.2rem;
+}
+.album-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem); letter-spacing: 0.06em;
+  color: var(--white); line-height: 1; margin-bottom: 0.4rem;
+}
+.album-artist {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--mist); margin-bottom: 1.2rem;
+}
+.album-desc { color: var(--mist); font-size: 0.92rem; line-height: 1.85; margin-bottom: 2rem; max-width: 460px; }
+.stream-row { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 2.2rem; }
+.stream-btn {
+  font-family: 'Oswald', sans-serif; font-size: 0.65rem; letter-spacing: 0.13em; text-transform: uppercase;
+  color: var(--silver); text-decoration: none;
+  border: 1px solid rgba(200,196,212,0.2); padding: 0.45rem 1.1rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+.stream-btn:hover { border-color: var(--red); color: var(--red-lt); }
+.tracklist { border-top: 1px solid rgba(196,26,26,0.12); }
+.track-row {
+  display: grid; grid-template-columns: 2rem 1fr auto auto;
+  align-items: center; gap: 0.75rem; padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(196,26,26,0.07); transition: background 0.2s;
+}
+.track-row:hover { background: rgba(196,26,26,0.04); }
+.track-num { font-family: 'Oswald', sans-serif; font-size: 0.65rem; color: var(--mist); opacity: 0.4; text-align: right; }
+.track-title { font-size: 0.9rem; color: var(--white); }
+.track-badge {
+  font-size: 0.55rem; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 0.18rem 0.55rem; color: var(--red); border: 1px solid rgba(196,26,26,0.38);
+  font-family: 'Oswald', sans-serif;
+}
+.track-play-btn {
+  background: transparent; border: 1px solid rgba(196,26,26,0.3);
+  color: var(--red); width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 0.6rem; flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+.track-play-btn:hover { background: rgba(196,26,26,0.12); border-color: var(--red); }
+.track-play-btn.playing { background: rgba(196,26,26,0.18); border-color: var(--red-lt); }
+.track-play-btn.disabled { opacity: 0.22; cursor: default; pointer-events: none; }
+
+/* ── FIXED PLAYER ─────────────────────────────────────────────────────────── */
+#player {
+  display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+  background: rgba(8,8,10,0.97); border-top: 1px solid rgba(196,26,26,0.3);
+  backdrop-filter: blur(16px);
+  grid-template-columns: auto 1fr auto; align-items: center;
+  gap: 1.5rem; padding: 0.8rem 2rem;
+  transform: translateY(100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+#player.visible { transform: translateY(0); }
+.p-info { display: flex; align-items: center; gap: 1rem; min-width: 0; }
+.p-thumb { width: 42px; height: 42px; object-fit: cover; border: 1px solid rgba(196,26,26,0.25); flex-shrink: 0; }
+.p-title { font-family: 'Oswald', sans-serif; font-size: 0.95rem; color: var(--white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; letter-spacing: 0.05em; }
+.p-sub { font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mist); opacity: 0.55; }
+.p-controls { display: flex; align-items: center; flex-direction: column; flex: 1; gap: 0.5rem; min-width: 0; }
+.p-btn-row { display: flex; align-items: center; gap: 1.2rem; }
+.p-btn { background: transparent; border: none; color: var(--mist); cursor: pointer; font-size: 0.9rem; padding: 0.25rem; transition: color 0.2s; }
+.p-btn:hover { color: var(--red-lt); }
+#p-playbtn {
+  width: 36px; height: 36px; border: 1px solid rgba(196,26,26,0.5);
+  background: transparent; color: var(--red); cursor: pointer; font-size: 0.8rem;
+  display: flex; align-items: center; justify-content: center; transition: background 0.2s;
+}
+#p-playbtn:hover { background: rgba(196,26,26,0.15); }
+.p-progress { display: flex; align-items: center; gap: 0.75rem; width: 100%; }
+.p-time { font-size: 0.6rem; color: var(--mist); opacity: 0.55; white-space: nowrap; font-family: 'Oswald', sans-serif; }
+#p-bar { flex: 1; height: 3px; background: rgba(196,26,26,0.15); cursor: pointer; position: relative; }
+#p-fill { height: 100%; width: 0%; background: linear-gradient(to right, var(--red), var(--red-lt)); pointer-events: none; }
+.p-right { display: flex; align-items: center; gap: 1rem; }
+#p-vol { width: 72px; accent-color: var(--red); }
+#p-close { background: transparent; border: none; color: var(--mist); cursor: pointer; font-size: 1rem; opacity: 0.5; transition: opacity 0.2s; }
+#p-close:hover { opacity: 1; }
+
+/* ── FOOTER ──────────────────────────────────────────────────────────────── */
+footer {
+  background: var(--black); border-top: 1px solid rgba(196,26,26,0.15);
+  padding: 4rem 2rem 3rem; text-align: center;
+}
+.foot-name {
+  font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 0.08em;
+  color: var(--white); margin-bottom: 0.3rem;
+}
+.foot-name span { color: var(--red); }
+.foot-label {
+  font-family: 'Oswald', sans-serif; font-size: 0.6rem;
+  letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--mist); opacity: 0.4; margin-bottom: 1.5rem;
+}
+.foot-links { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+.foot-links a {
+  font-family: 'Oswald', sans-serif; font-size: 0.62rem;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--mist); text-decoration: none; opacity: 0.4; transition: opacity 0.2s, color 0.2s;
+}
+.foot-links a:hover { opacity: 1; color: var(--red-lt); }
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .singles-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .singles-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .album-layout { grid-template-columns: 1fr; gap: 2rem; }
+  .album-cover { max-width: 300px; margin: 0 auto; }
+  .hero-content { padding: 0 1.8rem 3.5rem; }
+  #player { grid-template-columns: 1fr; }
+  .p-info { display: none; }
+}
+
+/* ── AGE GATE ────────────────────────────────────────────────────────────── */
+.age-gate-overlay {
+  position: absolute; inset: 0; z-index: 10;
+  background: rgba(8,8,10,0.97);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 2rem; text-align: center;
+  transition: opacity 0.4s;
+}
+.age-gate-overlay.unlocked {
+  opacity: 0; pointer-events: none;
+}
+.age-gate-icon {
+  font-size: 3rem; margin-bottom: 1rem; opacity: 0.6;
+}
+.age-gate-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem; letter-spacing: 0.1em;
+  color: var(--white); margin-bottom: 0.5rem;
+}
+.age-gate-sub {
+  font-family: 'Oswald', sans-serif; font-size: 0.72rem;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--mist); margin-bottom: 2rem; line-height: 1.8;
+}
+.age-gate-btn {
+  background: var(--red); color: var(--white); border: none;
+  padding: 0.85rem 2.2rem; cursor: pointer;
+  font-family: 'Oswald', sans-serif; font-size: 0.75rem;
+  font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
+  transition: background 0.2s; margin: 0.4rem;
+}
+.age-gate-btn:hover { background: var(--red-lt); }
+.age-gate-btn.secondary {
+  background: transparent; color: var(--mist);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.age-gate-btn.secondary:hover { color: var(--white); border-color: rgba(255,255,255,0.4); }
+.age-gate-warning {
+  font-size: 0.62rem; color: var(--mist); opacity: 0.45;
+  margin-top: 1.2rem; letter-spacing: 0.08em; max-width: 320px; line-height: 1.7;
+}
+#texxxas-section { position: relative; overflow: hidden; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="topnav">
+  <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/hello-texas-logo.png" style="height:48px;width:auto;">
+  <ul class="nav-links">
+    <li><a href="#bio">About</a></li>
+    <li><a href="#singles">Singles</a></li>
+    <li><a href="#album">That Texas Sound</a></li>
+    <li><a href="#messin">Messin' Round</a></li>
+    <li><a href="#daytodayarchives">Day To Day</a></li>
+    <li><a href="#texxxas">TeXXXas Tales 🔞</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-content">
+    <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/hello-texas-logo.png" alt="Hello Texas" style="height:160px;width:auto;margin-bottom:1.4rem;display:block;filter:drop-shadow(0 8px 32px rgba(196,26,26,0.4));">
+    <div class="hero-sub">Texas Country &nbsp;·&nbsp; Hello Texas Records</div>
+    <div class="hero-ctas">
+      <button class="cta-primary" onclick="playTrack('dtd_dancing')">&#9654;&nbsp; Play Dancing Through My Dreams</button>
+      <a href="#singles" class="cta-secondary">Discography</a>
+    </div>
+  </div>
+</section>
+
+<!-- BIO -->
+<section id="bio">
+  <div class="section-header">
+    <div class="section-eyebrow">About</div>
+    <h2 class="section-title">Hello Texas</h2>
+    <div class="tx-rule"><div class="tx-rule-line"></div><span class="tx-star">★</span><div class="tx-rule-line"></div></div>
+  </div>
+  <div class="bio-inner">
+    <p>Hello Texas is a Texas Country band that sounds exactly like where they're from — big stages, open roads, and the kind of songs that hit different when you're driving home late with the windows down.</p>
+    <p>They write about real things: loyalty, loss, the weight of silence, the pull of home. No irony, no hedging. Just Texas country music played the way it's supposed to be played — loud enough to mean it, honest enough to stick.</p>
+    <p>Released through Hello Texas Records, their growing catalog of singles spans everything from anthem-sized crowd raisers to quiet gut-punches. Every song earns its place.</p>
+  </div>
+</section>
+
+<!-- LATEST SINGLE -->
+<section id="latest-single" style="background:var(--navy);padding:5rem 0;border-top:1px solid rgba(196,26,26,0.25);border-bottom:1px solid rgba(196,26,26,0.12);">
+  <div style="text-align:center;padding:0 2rem 3.5rem;">
+    <div style="font-family:'Oswald',sans-serif;font-size:0.65rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--red);margin-bottom:0.75rem;">Latest Single</div>
+    <h2 id="latest-section-title" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);letter-spacing:0.06em;color:var(--white);">Dancing Through My Dreams</h2>
+    <div class="tx-rule"><div class="tx-rule-line"></div><span class="tx-star">★</span><div class="tx-rule-line"></div></div>
+  </div>
+  <div id="latest-ht" style="max-width:1040px;margin:0 auto;padding:0 2.5rem;display:grid;grid-template-columns:380px 1fr;gap:4rem;align-items:center;">
+    <div>
+      <img id="latest-cover" src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/dancing-through-my-dreams-cover.png" alt="Dancing Through My Dreams" style="width:100%;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 0 50px rgba(196,26,26,0.2),0 24px 64px rgba(0,0,0,0.8);">
+    </div>
+    <div style="padding-top:0.5rem;">
+      <div style="display:inline-block;font-family:'Oswald',sans-serif;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--red);border:1px solid rgba(196,26,26,0.4);padding:0.25rem 0.85rem;margin-bottom:1.2rem;">Latest Single</div>
+      <h2 id="latest-title" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:0.06em;line-height:1.1;margin-bottom:0.4rem;color:var(--white);">Dancing Through My Dreams</h2>
+      <div style="font-family:'Oswald',sans-serif;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--mist);margin-bottom:2rem;">Hello Texas</div>
+      <button onclick="playTrack('dtd_dancing')" style="display:inline-flex;align-items:center;gap:0.75rem;background:transparent;color:var(--red);border:1px solid rgba(196,26,26,0.5);cursor:pointer;padding:0.85rem 2rem;font-family:'Oswald',sans-serif;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;transition:border-color 0.2s,color 0.2s;">&#9654;&nbsp; Play Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- SINGLES -->
+<section id="singles">
+  <div class="section-header">
+    <div class="section-eyebrow">Singles</div>
+    <h2 class="section-title">The Catalog</h2>
+    <div class="tx-rule"><div class="tx-rule-line"></div><span class="tx-star">★</span><div class="tx-rule-line"></div></div>
+  </div>
+  <div class="singles-grid">
+    <div class="single-card" onclick="playTrack('dtd_dancing')">
+      <div class="single-img-wrap">
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/dancing-through-my-dreams-cover.png" alt="Dancing Through My Dreams" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+        <div class="single-overlay"><button class="single-play-btn" id="splay_dtd_dancing">&#9654;</button></div>
+      </div>
+      <div class="single-info">
+        <div class="single-title">Dancing Through My Dreams</div>
+        <div class="single-sub">Latest Single <span class="single-badge">New</span></div>
+      </div>
+    </div>
+    <div class="single-card" onclick="playTrack('bullets')">
+      <div class="single-img-wrap">
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Bullets%20on%20the%20Bible%20%28Album%20Cover%29.png" alt="Bullets on the Bible (Album Cover).png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+        <div class="single-overlay"><button class="single-play-btn" id="splay_bullets">&#9654;</button></div>
+      </div>
+      <div class="single-info">
+        <div class="single-title">Bullets on the Bible</div>
+        <div class="single-sub">Single</div>
+      </div>
+    </div>
+        <div class="single-card" onclick="playTrack('tts')">
+      <div class="single-img-wrap">
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/that-texas-sound-cover.png" alt="That Texas Sound">
+        <div class="single-overlay"><button class="single-play-btn" id="splay_tts">&#9654;</button></div>
+      </div>
+      <div class="single-info">
+        <div class="single-title">That Texas Sound</div>
+        <div class="single-sub">Single</div>
+        <div class="single-streams">
+          <a href="https://open.spotify.com/track/1OOceitD18iae5UcsyOByf" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-spotify">Spotify</a>
+          <a href="https://music.apple.com/us/album/that-texas-sound-live-single/1873044525" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-apple">Apple</a>
+          <a href="https://music.youtube.com/watch?v=zFFleCZv2ec" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-ytm">YT Music</a>
+          <a href="https://youtu.be/AhPhdOt1JR4" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-video">Video</a>
+        </div>
+      </div>
+    </div>
+    <div class="single-card" onclick="playTrack('silence')">
+      <div class="single-img-wrap">
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Hello%20Texas%20-%20Silence%20Don%27t%20Scare%20Me%20Anymore%20%28Cover%29%203000%20x%203000.png" alt="Hello Texas - Silence Don't Scare Me Anymore (Cover) 3000 x 3000.png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+        <div class="single-overlay"><button class="single-play-btn" id="splay_silence">&#9654;</button></div>
+      </div>
+      <div class="single-info">
+        <div class="single-title">Silence Don't Scare Me Anymore</div>
+        <div class="single-sub">Single</div>
+        <div class="single-streams">
+          <a href="https://open.spotify.com/track/3tqH8TWgPO9fqHwa8RpDik" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-spotify">Spotify</a>
+          <a href="https://music.apple.com/us/album/silence-dont-scare-me-anymore-single/1874619772" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-apple">Apple</a>
+          <a href="https://music.youtube.com/watch?v=X4mRzmyCXa4" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-ytm">YT Music</a>
+        </div>
+      </div>
+    </div>
+    <div class="single-card" onclick="playTrack('sdb')">
+      <div class="single-img-wrap">
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Hello%20Texas%20-%20Same%20Damn%20Band%20%28Cover%29%203000%20x%203000.png" alt="Hello Texas - Same Damn Band (Cover) 3000 x 3000.png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+        <div class="single-overlay"><button class="single-play-btn" id="splay_sdb">&#9654;</button></div>
+      </div>
+      <div class="single-info">
+        <div class="single-title">Same Damn Band</div>
+        <div class="single-sub">Single</div>
+        <div class="single-streams">
+          <a href="https://open.spotify.com/track/5wX0WhmCUyaf6h7w1QJuKi" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-spotify">Spotify</a>
+          <a href="https://music.apple.com/us/album/same-damn-band-single/1873314874" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-apple">Apple</a>
+          <a href="https://music.youtube.com/watch?v=6fqg_MDj9t4" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-ytm">YT Music</a>
+          <a href="https://youtu.be/c_zeUBg0ysg" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-video">Video</a>
+        </div>
+      </div>
+    </div>
+    <div class="single-card" onclick="playTrack('fade')">
+      <div class="single-img-wrap">
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Fade%20Out%20-%20Album%20Cover.png" alt="Fade Out - Album Cover.png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+        <div class="single-overlay"><button class="single-play-btn" id="splay_fade">&#9654;</button></div>
+      </div>
+      <div class="single-info">
+        <div class="single-title">Fade Out</div>
+        <div class="single-sub">Single</div>
+        <div class="single-streams">
+          <a href="https://youtu.be/e-OD1YfpBdU" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-video">Video</a>
+        </div>
+      </div>
+    </div>
+    <div class="single-card" onclick="playTrack('five')">
+      <div class="single-img-wrap">
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/5%20Hours%208%20Minutes%20-%203000%20x%203000%20Record%20Cover.jpg" alt="5 Hours 8 Minutes - 3000 x 3000 Record Cover.jpg" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+        <div class="single-overlay"><button class="single-play-btn" id="splay_five">&#9654;</button></div>
+      </div>
+      <div class="single-info">
+        <div class="single-title">5 Hours 8 Minutes</div>
+        <div class="single-sub">Single</div>
+      </div>
+    </div>
+    <div class="single-card" onclick="playTrack('good_int')">
+      <div class="single-img-wrap">
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Good%20Intentions%20-%20Album%20Cover.png" alt="Good Intentions - Album Cover.png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+        <div class="single-overlay"><button class="single-play-btn" id="splay_good_int">&#9654;</button></div>
+      </div>
+      <div class="single-info">
+        <div class="single-title">Good Intentions</div>
+        <div class="single-sub">Messin' Round</div>
+        <div class="single-streams">
+          <a href="https://open.spotify.com/track/2fCyETaJyiK7z0iSSwvzzG" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-spotify">Spotify</a>
+          <a href="https://music.apple.com/us/album/good-intentions-single/1874170312" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-apple">Apple</a>
+          <a href="https://music.youtube.com/watch?v=oQR3XiW429M" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-ytm">YT Music</a>
+        </div>
+      </div>
+    </div>
+    <div class="single-card" onclick="playTrack('booze')">
+      <div class="single-img-wrap">
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Hello%20Texas%20-%20This%20Booze%20is%20Broken%20%28Cover%29%203000%20x%203000.png" alt="Hello Texas - This Booze is Broken (Cover) 3000 x 3000.png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+        <div class="single-overlay"><button class="single-play-btn" id="splay_booze">&#9654;</button></div>
+      </div>
+      <div class="single-info">
+        <div class="single-title">This Booze is Broken</div>
+        <div class="single-sub">Messin' Round</div>
+        <div class="single-streams">
+          <a href="https://open.spotify.com/track/7FAhuI7BbF2xhxhzImJbGY" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-spotify">Spotify</a>
+          <a href="https://music.apple.com/us/album/this-booze-is-broken-single/1874626417" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-apple">Apple</a>
+          <a href="https://music.youtube.com/watch?v=HnHViEHsGoI" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-ytm">YT Music</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALBUM -->
+<section id="album">
+  <div class="section-header">
+    <div class="section-eyebrow">Debut Album</div>
+    <h2 class="section-title">That Texas Sound</h2>
+    <div class="tx-rule"><div class="tx-rule-line"></div><span class="tx-star">★</span><div class="tx-rule-line"></div></div>
+  </div>
+  <div class="album-layout">
+    <div>
+      <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/that-texas-sound-cover.png" alt="That Texas Sound" class="album-cover">
+    </div>
+    <div style="padding-top:0.5rem;">
+      <div class="album-badge">Debut Album</div>
+      <h2 class="album-title">That Texas Sound</h2>
+      <div class="album-artist">Hello Texas</div>
+      <p class="album-desc">Five songs that sound like Texas feels — big sky, honest words, and the kind of music that was always meant to be played in front of a crowd. The debut from Hello Texas, and just the beginning.</p>
+      <div class="stream-row">
+        <a href="#" class="stream-btn">&#9654; Spotify</a>
+        <a href="#" class="stream-btn">&#9834; Apple Music</a>
+        <a href="#" class="stream-btn">&#9654; YouTube</a>
+      </div>
+      <div class="tracklist">
+        <div class="track-row">
+          <span class="track-num">01</span>
+          <span class="track-title">Bullets on the Bible</span>
+          <span class="track-badge">Latest</span>
+          <button class="track-play-btn" onclick="playTrack('bullets')">&#9654;</button>
+        </div>
+        <div class="track-row">
+          <span class="track-num">02</span>
+          <span class="track-title">That Texas Sound</span>
+          <span></span>
+          <button class="track-play-btn" onclick="playTrack('tts')">&#9654;</button>
+        </div>
+        <div class="track-row">
+          <span class="track-num">03</span>
+          <span class="track-title">Silence Don't Scare Me Anymore</span>
+          <span></span>
+          <button class="track-play-btn" onclick="playTrack('silence')">&#9654;</button>
+        </div>
+        <div class="track-row">
+          <span class="track-num">04</span>
+          <span class="track-title">Same Damn Band</span>
+          <span></span>
+          <button class="track-play-btn" onclick="playTrack('sdb')">&#9654;</button>
+        </div>
+        <div class="track-row">
+          <span class="track-num">05</span>
+          <span class="track-title">Fade Out</span>
+          <span></span>
+          <button class="track-play-btn" onclick="playTrack('fade')">&#9654;</button>
+        </div>
+        <div class="track-row">
+          <span class="track-num">06</span>
+          <span class="track-title">5 Hours 8 Minutes</span>
+          <span></span>
+          <button class="track-play-btn" onclick="playTrack('five')">&#9654;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MESSIN' ROUND ALBUM -->
+<section id="messin" style="background:var(--navy);padding:5rem 0;border-top:1px solid rgba(196,26,26,0.12);">
+  <div class="section-header">
+    <div class="section-eyebrow">Second Album</div>
+    <h2 class="section-title">Messin' Round</h2>
+    <div class="tx-rule"><div class="tx-rule-line"></div><span class="tx-star">★</span><div class="tx-rule-line"></div></div>
+  </div>
+  <div class="album-layout">
+    <div>
+      <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/messin-round-cover.png" alt="Messin' Round" class="album-cover">
+    </div>
+    <div style="padding-top:0.5rem;">
+      <div class="album-badge">Album</div>
+      <h2 class="album-title">Messin' Round</h2>
+      <div class="album-artist">Hello Texas</div>
+      <p class="album-desc">The follow-up. Songs that don't take themselves too seriously but hit harder than they look. More tracks on the way.</p>
+      <div class="stream-row">
+        <a href="#" class="stream-btn">&#9654; Spotify</a>
+        <a href="#" class="stream-btn">&#9834; Apple Music</a>
+        <a href="#" class="stream-btn">&#9654; YouTube</a>
+      </div>
+      <div class="tracklist">
+        <div class="track-row">
+          <span class="track-num">01</span>
+          <span class="track-title">Good Intentions</span>
+          <span></span>
+          <button class="track-play-btn" onclick="playTrack('good_int')">&#9654;</button>
+        </div>
+        <div class="track-row">
+          <span class="track-num">02</span>
+          <span class="track-title">This Booze is Broken</span>
+          <span></span>
+          <button class="track-play-btn" onclick="playTrack('booze')">&#9654;</button>
+        </div>
+        <div class="track-row">
+          <span class="track-num">03</span>
+          <span class="track-title">Track 3</span>
+          <button class="track-play-btn disabled">&#9654;</button>
+        </div>
+      </div>
+      <p style="font-size:0.7rem;color:var(--mist);opacity:0.45;margin-top:1rem;letter-spacing:0.1em;">More tracks coming soon</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- DAY TO DAY ARCHIVES -->
+<section id="daytodayarchives" style="background:#09090D;padding:5rem 0;border-top:2px solid rgba(196,26,26,0.3);">
+  <div class="section-header">
+    <div class="section-eyebrow">Before Hello Texas · 2001</div>
+    <h2 class="section-title">Day To Day</h2>
+    <div class="tx-rule"><div class="tx-rule-line"></div><span class="tx-star">★</span><div class="tx-rule-line"></div></div>
+    <p style="margin-top:1.4rem;max-width:560px;margin-left:auto;margin-right:auto;color:var(--mist);font-size:0.92rem;line-height:1.85;text-align:center;">Before the band became Hello Texas, they were Day To Day. Eight songs recorded in 2001 were recently discovered. Two versions: the original lost sessions and modern remixes.</p>
+  </div>
+
+  <!-- THE LOST TAPES -->
+  <div class="album-layout" style="margin-bottom:5rem;">
+    <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/day-to-day-lost-tapes-cover.png" alt="Day To Day - The Lost Tapes" class="album-cover">
+    <div>
+      <div class="album-badge">Lost Sessions · 2001</div>
+      <h2 class="album-title">The Lost Tapes</h2>
+      <div class="album-artist">Day To Day</div>
+      <p class="album-desc">Eight songs captured raw in 2001 — before the band became Hello Texas. Unpolished, unfiltered, and finally heard.</p>
+      <div class="tracklist">
+        <div class="track-row">
+          <div class="track-num">1</div>
+          <div class="track-title">Dancing Through My Dreams</div>
+          <div class="track-badge">Lost Session</div>
+          <button class="track-play-btn" onclick="playTrack('dtd_dancing')">&#9654;</button>
+        </div>
+        <div class="track-row" style="opacity:0.35;">
+          <div class="track-num">2–8</div>
+          <div class="track-title" style="color:var(--mist);">More tracks coming soon</div>
+          <div></div>
+          <button class="track-play-btn disabled" disabled>&#9654;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE REMIXES -->
+  <div class="album-layout">
+    <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Day%20to%20Day%20-%20The%20Remixes%20-%20Album%20Cover.png" alt="Day To Day - The Remixes" class="album-cover">
+    <div>
+      <div class="album-badge">Remastered · Modern Production</div>
+      <h2 class="album-title">The Remixes</h2>
+      <div class="album-artist">Day To Day</div>
+      <p class="album-desc">The same eight songs, rebuilt with modern production. A bridge between what Day To Day was and what Hello Texas became.</p>
+      <div class="tracklist">
+        <div class="track-row" style="opacity:0.35;">
+          <div class="track-num">—</div>
+          <div class="track-title" style="color:var(--mist);">Coming soon</div>
+          <div></div>
+          <button class="track-play-btn disabled" disabled>&#9654;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEXXXAS TALES ALBUM -->
+<section id="texxxas" style="background:var(--black);padding:5rem 0;border-top:2px solid rgba(196,26,26,0.3);position:relative;">
+
+
+
+  <div style="position:relative;">
+  <!-- Visible unlock button sitting on top of the blur -->
+  <div id="texxxas-unlock-btn" style="
+    position:absolute; inset:0; z-index:5;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(8,8,10,0.45);
+  ">
+    <button onclick="showAgeGate()" style="
+      background:#C41A1A; color:#F0EEF8; border:none;
+      padding:1.1rem 2.8rem; cursor:pointer;
+      font-family:'Oswald',sans-serif; font-size:0.85rem; font-weight:500;
+      letter-spacing:0.22em; text-transform:uppercase;
+      box-shadow:0 0 30px rgba(196,26,26,0.5);
+    ">🔞 &nbsp;Unlock TeXXXas Tales</button>
+  </div>
+<div id="texxxas-content" style="filter:blur(8px);pointer-events:none;transition:filter 0.5s;user-select:none;">
+    <div class="section-header">
+      <div class="section-eyebrow">Explicit Album</div>
+      <h2 class="section-title">TeXXXas Tales</h2>
+      <div class="tx-rule"><div class="tx-rule-line"></div><span class="tx-star">★</span><div class="tx-rule-line"></div></div>
+    </div>
+    <div class="album-layout">
+      <div>
+        <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/texxxas-tales-cover.png" alt="TeXXXas Tales" class="album-cover">
+      </div>
+      <div style="padding-top:0.5rem;">
+        <div class="album-badge" style="color:var(--red);border-color:rgba(196,26,26,0.5);">&#128286; Explicit</div>
+        <h2 class="album-title">TeXXXas Tales</h2>
+        <div class="album-artist">Hello Texas</div>
+        <p class="album-desc">No filter. No apologies. Three songs that say exactly what they mean and mean exactly what they say. You were warned.</p>
+        <div class="stream-row">
+          <a href="#" class="stream-btn">&#9654; Spotify</a>
+          <a href="#" class="stream-btn">&#9834; Apple Music</a>
+          <a href="#" class="stream-btn">&#9654; YouTube</a>
+        </div>
+        <div class="tracklist">
+          <div class="track-row">
+            <span class="track-num">01</span>
+            <span class="track-title">All Hat No Shit <span style="font-size:0.65em;opacity:0.55;">&#128286;</span></span>
+            <span></span>
+            <button class="track-play-btn" onclick="playExplicit('all_hat')">&#9654;</button>
+          </div>
+          <div class="track-row">
+            <span class="track-num">02</span>
+            <span class="track-title">F**k Them Fish <span style="font-size:0.65em;opacity:0.55;">&#128286;</span></span>
+            <span></span>
+            <button class="track-play-btn" onclick="playExplicit('ftf')">&#9654;</button>
+          </div>
+          <div class="track-row">
+            <span class="track-num">03</span>
+            <span class="track-title">No Hand-Jobs in the Parking Lot <span style="font-size:0.65em;opacity:0.55;">&#128286;</span></span>
+            <span></span>
+            <button class="track-play-btn" onclick="playExplicit('parking')">&#9654;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mini singles row for the explicit tracks -->
+    <div style="max-width:1080px;margin:3rem auto 0;padding:0 2.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+      <div class="single-card" onclick="playExplicit('all_hat')">
+        <div class="single-img-wrap">
+          <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/All%20Hat%2C%20No%20Shit%20%28Album%20Cover%29.png" alt="All Hat, No Shit (Album Cover).png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+          <div class="single-overlay"><button class="single-play-btn" id="splay_all_hat">&#9654;</button></div>
+        </div>
+        <div class="single-info">
+          <div class="single-title">All Hat No Shit</div>
+          <div class="single-sub">TeXXXas Tales &#128286;</div>
+        </div>
+      </div>
+      <div class="single-card" onclick="playExplicit('ftf')">
+        <div class="single-img-wrap">
+          <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/FTF%20-%20Album%20Cover%20-%203000%20x%203000.png" alt="FTF - Album Cover - 3000 x 3000.png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+          <div class="single-overlay"><button class="single-play-btn" id="splay_ftf">&#9654;</button></div>
+        </div>
+        <div class="single-info">
+          <div class="single-title">F**k Them Fish</div>
+          <div class="single-sub">TeXXXas Tales &#128286;</div>
+          <div class="single-streams">
+            <a href="https://open.spotify.com/track/4nGzK50QI9pF5cD9C2Mj6M" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-spotify">Spotify</a>
+            <a href="https://music.apple.com/us/album/f-them-fish-single/1879799308" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-apple">Apple</a>
+            <a href="https://music.youtube.com/watch?v=6W_yogpLLG4" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-ytm">YT Music</a>
+            <a href="https://youtu.be/qeIN8UMlIzw" target="_blank" onclick="event.stopPropagation()" class="ss-btn ss-video">Video</a>
+          </div>
+        </div>
+      </div>
+      <div class="single-card" onclick="playExplicit('parking')">
+        <div class="single-img-wrap">
+          <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/No%20H-Jobs%20n%20the%20Parking%20Lot%20-%20Album%20Cover.png" alt="No H-Jobs n the Parking Lot - Album Cover.png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+          <div class="single-overlay"><button class="single-play-btn" id="splay_parking">&#9654;</button></div>
+        </div>
+        <div class="single-info">
+          <div class="single-title">No Hand-Jobs in the Parking Lot</div>
+          <div class="single-sub">TeXXXas Tales &#128286;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- FIXED PLAYER -->
+<audio id="audio" playsinline preload="none"></audio>
+<div id="player">
+  <div class="p-info">
+    <img id="p-thumb" class="p-thumb" src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/that-texas-sound-cover.png">
+    <div>
+      <div id="p-title" class="p-title">—</div>
+      <div id="p-sub" class="p-sub">Hello Texas</div>
+    </div>
+  </div>
+  <div class="p-controls">
+    <div class="p-btn-row">
+      <button class="p-btn" id="p-prev">&#9664;&#9664;</button>
+      <button id="p-playbtn">&#9654;</button>
+      <button class="p-btn" id="p-next">&#9654;&#9654;</button>
+    </div>
+    <div class="p-progress">
+      <span class="p-time" id="p-cur">0:00</span>
+      <div id="p-bar"><div id="p-fill"></div></div>
+      <span class="p-time" id="p-dur">0:00</span>
+    </div>
+  </div>
+  <div class="p-right">
+    <input type="range" id="p-vol" min="0" max="1" step="0.02" value="0.85">
+    <button id="p-close">&#x2715;</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+<!-- TEXXXAS AGE GATE — fixed full-screen, outside all sections -->
+<div id="age-gate" style="
+  display:flex; position:fixed; inset:0; z-index:9999;
+  background:rgba(8,8,10,0.97);
+  flex-direction:column; align-items:center; justify-content:center;
+  padding:2rem; text-align:center;
+  opacity:0; pointer-events:none; transition:opacity 0.3s;
+">
+  <div style="font-size:3.5rem;margin-bottom:1rem;">🔞</div>
+  <div style="font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:0.1em;color:#F0EEF8;margin-bottom:0.5rem;">Explicit Content</div>
+  <div style="font-family:'Oswald',sans-serif;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;color:#7A7890;margin-bottom:2rem;line-height:1.9;">
+    TeXXXas Tales contains explicit lyrics<br>and adult humor.<br>
+    You must be 18 or older to listen.
+  </div>
+  <button onclick="unlockTexxxas()" style="
+    background:#C41A1A;color:#F0EEF8;border:none;
+    padding:1rem 2.5rem;cursor:pointer;
+    font-family:'Oswald',sans-serif;font-size:0.8rem;font-weight:500;
+    letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.8rem;
+    display:block;width:100%;max-width:320px;
+  ">I'm 18 or Older — Let Me In</button>
+  <button onclick="closeAgeGate()" style="
+    background:transparent;color:#7A7890;
+    border:1px solid rgba(255,255,255,0.15);
+    padding:0.75rem 2rem;cursor:pointer;
+    font-family:'Oswald',sans-serif;font-size:0.72rem;
+    letter-spacing:0.18em;text-transform:uppercase;
+    display:block;width:100%;max-width:320px;
+  ">No Thanks</button>
+  <div style="font-size:0.62rem;color:#7A7890;opacity:0.45;margin-top:1.2rem;max-width:320px;line-height:1.7;">
+    By continuing you confirm you are of legal age to access explicit content.
+  </div>
+</div>
+
+<footer>
+  <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/hello-texas-logo.png" alt="Hello Texas" style="height:64px;width:auto;display:block;margin:0 auto 1rem;">
+  <div class="foot-label">Hello Texas Records</div>
+  <div class="foot-links">
+    <a href="#">Spotify</a>
+    <a href="#">Apple Music</a>
+    <a href="#">YouTube</a>
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+  </div>
+</footer>
+
+<script>
+const TRACKS = {
+  bullets:  { title: "Bullets on the Bible",           sub: "Latest Single",    src: "https://www.dropbox.com/scl/fi/zqd2j3q8qwp0ar6xqqy8l/Bullets-on-the-Bible-Mastered-MP3.mp3?rlkey=xumwau0hjs5mrnnjh1rh2rytd&raw=1" },
+  tts:      { title: "That Texas Sound",               sub: "Single",           src: "https://www.dropbox.com/scl/fi/3sc72tdzvu913t0se9567/Hello-Texas-That-Texas-Sound-Released-MP3.mp3?rlkey=b9sybqjdutyplwqmat72bnn82&raw=1" },
+  silence:  { title: "Silence Don't Scare Me Anymore", sub: "Single",           src: "https://www.dropbox.com/scl/fi/9wl11kdagwdsp5h8s0sy6/Hello-Texas-Silence-Don-t-Scare-Me-Anymore-Released-MP3.mp3?rlkey=zwha59nz115icszj90blqf0xp&raw=1" },
+  sdb:      { title: "Same Damn Band",                 sub: "Single",           src: "https://www.dropbox.com/scl/fi/emu7122b7nqxd9hz9v5c6/Same-Damn-Band-1.mp3?rlkey=7c9by9hu7rzss5b542nfq2dc9&raw=1" },
+  fade:     { title: "Fade Out",                       sub: "Single",           src: "https://www.dropbox.com/scl/fi/hplti274nd8jvrfc5su1i/Fade-Out-MASTERED-MP3.mp3?rlkey=sy6wkqhe15gtjp7b1tl87i8ni&raw=1" },
+  five:     { title: "5 Hours 8 Minutes",              sub: "Single",           src: "https://www.dropbox.com/scl/fi/pddstqkzmdos6qh2eb4s1/5-Hours-8-Minutes-Acoustic-MP3.mp3?rlkey=mmu4xr3bjpcuiobnr2zzh86tr&raw=1" },
+  good_int: { title: "Good Intentions",                sub: "Messin' Round",    src: "https://www.dropbox.com/scl/fi/u37w7hmokzzdfcm0vglu8/Good-Intentions-Song.mp3?rlkey=74jx6hxyuv9f4celr47njbiy1&raw=1" },
+  booze:    { title: "This Booze is Broken",           sub: "Messin' Round",    src: "https://www.dropbox.com/scl/fi/v8mn75tboxgxebgug1fnr/This-Booze-is-Broken-MP3.mp3?rlkey=x9im6yhdnn0orkkpnqzhesbxw&raw=1" },
+  all_hat:  { title: "All Hat No Shit",                sub: "TeXXXas Tales",    src: "https://www.dropbox.com/scl/fi/r0o5eulpngk4bc8vrg24z/All-Hat-No-Shit-Mastered-MP3.mp3?rlkey=r7k5x75qyptl0a8skymgldqs5&raw=1", explicit: true },
+  ftf:      { title: "F**k Them Fish",                 sub: "TeXXXas Tales",    src: "https://www.dropbox.com/scl/fi/5mbg7m39b8o9d2266ibqn/FTFish-Explicit-Version-Mastered-MP3.mp3?rlkey=f680osf7p18sdx95ztqn7wm86&raw=1", explicit: true },
+  parking:  { title: "No Hand-Jobs in the Parking Lot", sub: "TeXXXas Tales",  src: "https://www.dropbox.com/scl/fi/i9rul4r1awlw2dahuc41y/Parking-Lot-Mastered-MP3.mp3?rlkey=30hc9af5e6hpkk0yzxjgaz4d5&raw=1", explicit: true },
+  // Day To Day Archives
+  dtd_dancing: { title: "Dancing Through My Dreams", sub: "The Lost Tapes · Day To Day", src: "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1" },
+};
+const ORDER_TTS   = ['bullets','tts','silence','sdb','fade','five'];
+const ORDER_MR    = ['good_int','booze'];
+const ORDER_TX    = ['all_hat','ftf','parking'];
+const ORDER_LOST  = ['dtd_dancing'];
+const ORDER_REMIX = [];
+const ORDER = ORDER_TTS.concat(ORDER_MR).concat(ORDER_TX).concat(ORDER_LOST).concat(ORDER_REMIX);
+let cur = null;
+const audio  = document.getElementById('audio');
+const player = document.getElementById('player');
+const pThumb = document.getElementById('p-thumb');
+
+// Map track IDs to single card images for player thumbnail
+const thumbMap = {};
+document.querySelectorAll('.single-card').forEach(card => {
+  const id = card.getAttribute('onclick')?.match(/'([^']+)'/)?.[1];
+  const img = card.querySelector('img');
+  if (id && img) thumbMap[id] = img;
+});
+// Day To Day track thumbnails (no single-card DOM elements)
+thumbMap['dtd_dancing'] = { src: 'https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/dancing-through-my-dreams-cover.png' };
+
+function fmt(s) {
+  if (isNaN(s) || s === Infinity) return '0:00';
+  const m = Math.floor(s/60), sec = Math.floor(s%60);
+  return m + ':' + (sec < 10 ? '0' : '') + sec;
+}
+function setAllBtns(id, playing) {
+  document.querySelectorAll('.track-play-btn:not(.disabled)').forEach(b => {
+    const tid = b.getAttribute('onclick')?.match(/'([^']+)'/)?.[1];
+    if (!tid) return;
+    b.innerHTML = (tid === id && playing) ? '&#9646;&#9646;' : '&#9654;';
+    b.classList.toggle('playing', tid === id && playing);
+  });
+  document.querySelectorAll('.single-play-btn').forEach(b => {
+    const tid = b.closest('.single-card')?.getAttribute('onclick')?.match(/'([^']+)'/)?.[1];
+    b.innerHTML = (tid === id && playing) ? '&#9646;&#9646;' : '&#9654;';
+    b.classList.toggle('playing', tid === id && playing);
+  });
+  document.getElementById('p-playbtn').innerHTML = playing ? '&#9646;&#9646;' : '&#9654;';
+}
+function playTrack(id) {
+  const t = TRACKS[id];
+  if (!t) return;
+  if (cur === id) {
+    if (audio.paused) { audio.play().catch(()=>{}); setAllBtns(id, true); }
+    else              { audio.pause(); setAllBtns(id, false); }
+    return;
+  }
+  cur = id;
+  audio.removeAttribute('crossorigin');
+  audio.src = t.src;
+  document.getElementById('p-title').textContent = t.title;
+  document.getElementById('p-sub').textContent   = t.sub;
+  if (thumbMap[id]) pThumb.src = thumbMap[id].src;
+  player.style.display = 'grid';
+  setTimeout(() => player.classList.add('visible'), 10);
+  setAllBtns(id, true);
+  audio.load();
+  const pp = audio.play();
+  if (pp !== undefined) {
+    pp.catch(() => {
+      audio.addEventListener('canplaythrough', function onCPT() {
+        audio.removeEventListener('canplaythrough', onCPT);
+        audio.play().catch(()=>{});
+      });
+    });
+  }
+}
+audio.addEventListener('timeupdate', () => {
+  const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+  document.getElementById('p-fill').style.width = pct + '%';
+  document.getElementById('p-cur').textContent  = fmt(audio.currentTime);
+  document.getElementById('p-dur').textContent  = fmt(audio.duration);
+});
+audio.addEventListener('ended', () => {
+  const i = ORDER.indexOf(cur);
+  if (i < ORDER.length - 1) playTrack(ORDER[i+1]);
+  else setAllBtns(cur, false);
+});
+document.getElementById('p-playbtn').addEventListener('click', () => {
+  if (!cur) return;
+  if (audio.paused) { audio.play().catch(()=>{}); setAllBtns(cur, true); }
+  else              { audio.pause(); setAllBtns(cur, false); }
+});
+document.getElementById('p-prev').addEventListener('click', () => {
+  if (!cur) return;
+  const i = ORDER.indexOf(cur);
+  if (audio.currentTime > 3) { audio.currentTime = 0; return; }
+  if (i > 0) playTrack(ORDER[i-1]);
+});
+document.getElementById('p-next').addEventListener('click', () => {
+  if (!cur) return;
+  const i = ORDER.indexOf(cur);
+  if (i < ORDER.length - 1) playTrack(ORDER[i+1]);
+});
+document.getElementById('p-bar').addEventListener('click', e => {
+  if (!audio.duration) return;
+  const r = e.currentTarget.getBoundingClientRect();
+  audio.currentTime = ((e.clientX - r.left) / r.width) * audio.duration;
+});
+document.getElementById('p-vol').addEventListener('input', e => { audio.volume = e.target.value; });
+document.getElementById('p-close').addEventListener('click', () => {
+  audio.pause(); player.classList.remove('visible');
+  setTimeout(() => player.style.display = 'none', 350);
+  setAllBtns(cur, false); cur = null;
+});
+const nav = document.getElementById('topnav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+
+// ── AGE GATE ──────────────────────────────────────────────────────────────
+let texxxasUnlocked = false;
+
+function showAgeGate() {
+  const gate = document.getElementById('age-gate');
+  gate.style.opacity = '1';
+  gate.style.pointerEvents = 'auto';
+}
+
+function closeAgeGate() {
+  const gate = document.getElementById('age-gate');
+  gate.style.opacity = '0';
+  gate.style.pointerEvents = 'none';
+}
+
+function unlockTexxxas() {
+  texxxasUnlocked = true;
+  closeAgeGate();
+  const content = document.getElementById('texxxas-content');
+  content.style.filter = 'none';
+  content.style.pointerEvents = 'auto';
+  content.style.userSelect = 'auto';
+  const btn = document.getElementById('texxxas-unlock-btn');
+  if (btn) btn.style.display = 'none';
+}
+
+function playExplicit(id) {
+  if (!texxxasUnlocked) {
+    showAgeGate();
+    return;
+  }
+  playTrack(id);
+}
+
+// Show gate when user scrolls to TeXXXas section
+window.addEventListener('scroll', function() {
+  if (texxxasUnlocked) return;
+  const section = document.getElementById('texxxas');
+  if (!section) return;
+  const rect = section.getBoundingClientRect();
+  if (rect.top < window.innerHeight && rect.bottom > 0) {
+    showAgeGate();
+  }
+});
+
+</script>
+
+<script>
+/* ── LATEST SINGLE (auto-updates from latest.json) ─────────────────────── */
+fetch('https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/latest.json')
+  .then(r => r.json())
+  .then(data => {
+    // Update latest single section title/cover (audio already mapped to dtd_dancing)
+
+    // Update section header title
+    const sectionTitle = document.getElementById('latest-section-title');
+    if (sectionTitle && data.title) sectionTitle.textContent = data.title;
+    // Move the Latest badge to the correct single card
+    document.querySelectorAll('.single-card').forEach(card => {
+      const titleEl = card.querySelector('.single-title');
+      const subEl   = card.querySelector('.single-sub');
+      if (!titleEl || !subEl) return;
+
+      // Remove any existing Latest badge
+      const existing = subEl.querySelector('.single-badge');
+      if (existing) existing.remove();
+
+      // Add badge to the matching card
+      if (data.title && titleEl.textContent.trim() === data.title) {
+        subEl.innerHTML = 'Single <span class="single-badge">Latest</span>';
+      }
+    });
+
+    // Update album tracklist Latest badge
+    document.querySelectorAll('.track-row').forEach(row => {
+      const titleEl = row.querySelector('.track-title');
+      const badgeEl = row.querySelector('.track-badge');
+      if (!titleEl) return;
+      if (badgeEl) badgeEl.remove();
+      if (data.title && titleEl.textContent.trim() === data.title) {
+        const btn = row.querySelector('.track-play-btn');
+        if (btn) {
+          const badge = document.createElement('span');
+          badge.className = 'track-badge';
+          badge.textContent = 'Latest';
+          row.insertBefore(badge, btn);
+        }
+      }
+    });
+
+    // Update player thumbnail if it matches
+    if (data.image) {
+      const playerImg = document.querySelector('#player .p-info img');
+      if (playerImg) playerImg.src = data.image;
+    }
+  })
+  .catch(() => { /* silent fail — static HTML still works */ });
+</script>
+
+</body>
+</html>
