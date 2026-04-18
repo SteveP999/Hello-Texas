@@ -1,0 +1,72 @@
+{
+  "artist": "Hello Texas",
+  "latestUrl": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/latest.json",
+  "tracks": [
+    {
+      "title": "That Texas Sound",
+      "album": "Single",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/that-texas-sound-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/3sc72tdzvu913t0se9567/Hello-Texas-That-Texas-Sound-Released-MP3.mp3?rlkey=b9sybqjdutyplwqmat72bnn82&raw=1"
+    },
+    {
+      "title": "Fade Out",
+      "album": "Single",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Fade%20Out%20-%20Album%20Cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/hplti274nd8jvrfc5su1i/Fade-Out-MASTERED-MP3.mp3?rlkey=sy6wkqhe15gtjp7b1tl87i8ni&raw=1"
+    },
+    {
+      "title": "Same Damn Band",
+      "album": "Single",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Hello%20Texas%20-%20Same%20Damn%20Band%20%28Cover%29%203000%20x%203000.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/emu7122b7nqxd9hz9v5c6/Same-Damn-Band-1.mp3?rlkey=7c9by9hu7rzss5b542nfq2dc9&raw=1"
+    },
+    {
+      "title": "5 Hours 8 Minutes",
+      "album": "Single",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/5%20Hours%208%20Minutes%20-%203000%20x%203000%20Record%20Cover.jpg",
+      "audioSrc": "https://www.dropbox.com/scl/fi/pddstqkzmdos6qh2eb4s1/5-Hours-8-Minutes-Acoustic-MP3.mp3?rlkey=mmu4xr3bjpcuiobnr2zzh86tr&raw=1"
+    },
+    {
+      "title": "Bullets on the Bible",
+      "album": "Latest Single",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Bullets%20on%20the%20Bible%20%28Album%20Cover%29.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/zqd2j3q8qwp0ar6xqqy8l/Bullets-on-the-Bible-Mastered-MP3.mp3?rlkey=xumwau0hjs5mrnnjh1rh2rytd&raw=1"
+    },
+    {
+      "title": "F**k Them Fish",
+      "album": "TeXXXas Tales",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/FTF%20-%20Album%20Cover%20-%203000%20x%203000.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/5mbg7m39b8o9d2266ibqn/FTFish-Explicit-Version-Mastered-MP3.mp3?rlkey=f680osf7p18sdx95ztqn7wm86&raw=1"
+    },
+    {
+      "title": "No Hand-Jobs in the Parking Lot",
+      "album": "TeXXXas Tales",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/No%20H-Jobs%20n%20the%20Parking%20Lot%20-%20Album%20Cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/i9rul4r1awlw2dahuc41y/Parking-Lot-Mastered-MP3.mp3?rlkey=30hc9af5e6hpkk0yzxjgaz4d5&raw=1"
+    },
+    {
+      "title": "All Hat No Shit",
+      "album": "TeXXXas Tales",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/All%20Hat%2C%20No%20Shit%20%28Album%20Cover%29.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/r0o5eulpngk4bc8vrg24z/All-Hat-No-Shit-Mastered-MP3.mp3?rlkey=r7k5x75qyptl0a8skymgldqs5&raw=1"
+    },
+    {
+      "title": "Dancing Through My Dreams",
+      "album": "Day To Day - The Lost Tapes",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/dancing-through-my-dreams-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1"
+    },
+    {
+      "title": "Good Intentions",
+      "album": "Messin' Round",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Good%20Intentions%20-%20Album%20Cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/u37w7hmokzzdfcm0vglu8/Good-Intentions-Song.mp3?rlkey=74jx6hxyuv9f4celr47njbiy1&raw=1"
+    },
+    {
+      "title": "This Booze is Broken",
+      "album": "Messin' Round",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Hello%20Texas%20-%20This%20Booze%20is%20Broken%20%28Cover%29%203000%20x%203000.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/v8mn75tboxgxebgug1fnr/This-Booze-is-Broken-MP3.mp3?rlkey=x9im6yhdnn0orkkpnqzhesbxw&raw=1"
+    }
+  ]
+}
