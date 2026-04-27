@@ -1,0 +1,101 @@
+[
+  {
+    "id": "happily_ever_after",
+    "num": "01",
+    "title": "Happily Ever After",
+    "artist": "Hello Texas",
+    "album": "That Texas Sound",
+    "type": "Latest Single",
+    "isLatest": true,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/hello-texas-happily-ever-after-cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1"
+  },
+  {
+    "id": "that_texas_sound",
+    "num": "02",
+    "title": "That Texas Sound",
+    "artist": "Hello Texas",
+    "album": "Single",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/that-texas-sound-cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/3sc72tdzvu913t0se9567/Hello-Texas-That-Texas-Sound-Released-MP3.mp3?rlkey=b9sybqjdutyplwqmat72bnn82&raw=1"
+  },
+  {
+    "id": "fade_out",
+    "num": "03",
+    "title": "Fade Out",
+    "artist": "Hello Texas",
+    "album": "Single",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Fade%20Out%20-%20Album%20Cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/hplti274nd8jvrfc5su1i/Fade-Out-MASTERED-MP3.mp3?rlkey=sy6wkqhe15gtjp7b1tl87i8ni&raw=1"
+  },
+  {
+    "id": "same_damn_band",
+    "num": "04",
+    "title": "Same Damn Band",
+    "artist": "Hello Texas",
+    "album": "Single",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Hello%20Texas%20-%20Same%20Damn%20Band%20%28Cover%29%203000%20x%203000.png",
+    "audio": "https://www.dropbox.com/scl/fi/emu7122b7nqxd9hz9v5c6/Same-Damn-Band-1.mp3?rlkey=7c9by9hu7rzss5b542nfq2dc9&raw=1"
+  },
+  {
+    "id": "five_hours_eight_minutes",
+    "num": "05",
+    "title": "5 Hours 8 Minutes",
+    "artist": "Hello Texas",
+    "album": "Single",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/5%20Hours%208%20Minutes%20-%203000%20x%203000%20Record%20Cover.jpg",
+    "audio": "https://www.dropbox.com/scl/fi/pddstqkzmdos6qh2eb4s1/5-Hours-8-Minutes-Acoustic-MP3.mp3?rlkey=mmu4xr3bjpcuiobnr2zzh86tr&raw=1"
+  },
+  {
+    "id": "bullets_on_the_bible",
+    "num": "06",
+    "title": "Bullets on the Bible",
+    "artist": "Hello Texas",
+    "album": "Latest Single",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Bullets%20on%20the%20Bible%20%28Album%20Cover%29.png",
+    "audio": "https://www.dropbox.com/scl/fi/zqd2j3q8qwp0ar6xqqy8l/Bullets-on-the-Bible-Mastered-MP3.mp3?rlkey=xumwau0hjs5mrnnjh1rh2rytd&raw=1"
+  },
+  {
+    "id": "dancing_through_my_dreams",
+    "num": "07",
+    "title": "Dancing Through My Dreams",
+    "artist": "Hello Texas",
+    "album": "Day To Day - The Lost Tapes",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/dancing-through-my-dreams-cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1"
+  },
+  {
+    "id": "good_intentions",
+    "num": "08",
+    "title": "Good Intentions",
+    "artist": "Hello Texas",
+    "album": "Messin' Round",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Good%20Intentions%20-%20Album%20Cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/u37w7hmokzzdfcm0vglu8/Good-Intentions-Song.mp3?rlkey=74jx6hxyuv9f4celr47njbiy1&raw=1"
+  },
+  {
+    "id": "this_booze_is_broken",
+    "num": "09",
+    "title": "This Booze is Broken",
+    "artist": "Hello Texas",
+    "album": "Messin' Round",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Hello%20Texas%20-%20This%20Booze%20is%20Broken%20%28Cover%29%203000%20x%203000.png",
+    "audio": "https://www.dropbox.com/scl/fi/v8mn75tboxgxebgug1fnr/This-Booze-is-Broken-MP3.mp3?rlkey=x9im6yhdnn0orkkpnqzhesbxw&raw=1"
+  }
+]
