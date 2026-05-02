@@ -97,5 +97,16 @@
     "isLatest": false,
     "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/Hello%20Texas%20-%20This%20Booze%20is%20Broken%20%28Cover%29%203000%20x%203000.png",
     "audio": "https://www.dropbox.com/scl/fi/v8mn75tboxgxebgug1fnr/This-Booze-is-Broken-MP3.mp3?rlkey=x9im6yhdnn0orkkpnqzhesbxw&raw=1"
+  },
+  {
+    "id": "go_fuck_yourself",
+    "num": "10",
+    "title": "Go Fuck Yourself",
+    "artist": "Hello Texas",
+    "album": "TeXXXas Tales",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/hello-texas-go-fuck-yourself-cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/znlwjq81fdtgn00v41uhb/hello-texas-go-fuck-yourself-mp3-v1.mp3?rlkey=agrm2w5nnlpriepepgu95ivp0&raw=1"
   }
 ]
