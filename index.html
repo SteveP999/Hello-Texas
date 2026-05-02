@@ -810,7 +810,7 @@ footer {
     </div>
 
     <!-- Mini singles row for the explicit tracks -->
-    <div style="max-width:1080px;margin:3rem auto 0;padding:0 2.5rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+    <div style="max-width:1080px;margin:3rem auto 0;padding:0 2.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;">
       <div class="single-card" onclick="playExplicit('all_hat')">
         <div class="single-img-wrap">
           <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/All%20Hat%2C%20No%20Shit%20%28Album%20Cover%29.png" alt="All Hat, No Shit (Album Cover).png" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
@@ -844,6 +844,16 @@ footer {
         </div>
         <div class="single-info">
           <div class="single-title">No Hand-Jobs in the Parking Lot</div>
+          <div class="single-sub">TeXXXas Tales &#128286;</div>
+        </div>
+      </div>
+      <div class="single-card" onclick="playExplicit('gfy')">
+        <div class="single-img-wrap">
+          <img src="https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/covers/hello-texas-go-fuck-yourself-cover.png" alt="Go Fuck Yourself" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s,filter 0.4s;">
+          <div class="single-overlay"><button class="single-play-btn" id="splay_gfy">&#9654;</button></div>
+        </div>
+        <div class="single-info">
+          <div class="single-title">Go Fuck Yourself</div>
           <div class="single-sub">TeXXXas Tales &#128286;</div>
         </div>
       </div>
@@ -943,6 +953,7 @@ const TRACKS = {
   all_hat:  { title: "All Hat No Shit",                sub: "TeXXXas Tales",    src: "https://www.dropbox.com/scl/fi/r0o5eulpngk4bc8vrg24z/All-Hat-No-Shit-Mastered-MP3.mp3?rlkey=r7k5x75qyptl0a8skymgldqs5&raw=1", explicit: true },
   ftf:      { title: "F**k Them Fish",                 sub: "TeXXXas Tales",    src: "https://www.dropbox.com/scl/fi/5mbg7m39b8o9d2266ibqn/FTFish-Explicit-Version-Mastered-MP3.mp3?rlkey=f680osf7p18sdx95ztqn7wm86&raw=1", explicit: true },
   parking:  { title: "No Hand-Jobs in the Parking Lot", sub: "TeXXXas Tales",  src: "https://www.dropbox.com/scl/fi/i9rul4r1awlw2dahuc41y/Parking-Lot-Mastered-MP3.mp3?rlkey=30hc9af5e6hpkk0yzxjgaz4d5&raw=1", explicit: true },
+  gfy:      { title: "Go Fuck Yourself",                 sub: "TeXXXas Tales",  src: "https://www.dropbox.com/scl/fi/znlwjq81fdtgn00v41uhb/hello-texas-go-fuck-yourself-mp3-v1.mp3?rlkey=agrm2w5nnlpriepepgu95ivp0&raw=1", explicit: true },
   // Day To Day Archives
   dtd_dancing: { title: "Dancing Through My Dreams", sub: "The Lost Tapes · Day To Day", src: "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1" },
 };
