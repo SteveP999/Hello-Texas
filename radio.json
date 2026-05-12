@@ -2,108 +2,124 @@
   "artist": "Hello Texas",
   "latestUrl": "latest.json",
   "featuredTrack": {
-    "title": "Happily Ever After",
+    "title": "Dancing Through My Dreams",
     "artist": "Hello Texas",
-    "album": "That Texas Sound",
-    "cover": "images/covers/hello-texas-happily-ever-after-cover.png",
-    "audioSrc": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1",
+    "album": "Day To Day (The Lost Tapes)",
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-dancing-through-my-dreams-lost-sessions-cover.png",
+    "audioSrc": "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1",
     "videos": []
   },
   "tracks": [
     {
-      "title": "That Texas Sound",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-that-texas-sound-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/3sc72tdzvu913t0se9567/Hello-Texas-That-Texas-Sound-Released-MP3.mp3?rlkey=b9sybqjdutyplwqmat72bnn82&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Same Damn Band",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-same-damn-band-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/emu7122b7nqxd9hz9v5c6/Same-Damn-Band-1.mp3?rlkey=7c9by9hu7rzss5b542nfq2dc9&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Bullets on the Bible",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-bullets-on-the-bible-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/zqd2j3q8qwp0ar6xqqy8l/Bullets-on-the-Bible-Mastered-MP3.mp3?rlkey=xumwau0hjs5mrnnjh1rh2rytd&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Fade Out",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-fade-out-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/hplti274nd8jvrfc5su1i/Fade-Out-MASTERED-MP3.mp3?rlkey=sy6wkqhe15gtjp7b1tl87i8ni&raw=1",
-      "videos": [
-        {
-          "title": "Official Video",
-          "youtube": "https://youtu.be/PWrSeRbevPo"
-        }
-      ]
-    },
-    {
-      "title": "5 Hours 8 Minutes",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-5-hours-8-minutes-cover.jpg",
-      "audioSrc": "https://www.dropbox.com/scl/fi/pddstqkzmdos6qh2eb4s1/5-Hours-8-Minutes-Acoustic-MP3.mp3?rlkey=mmu4xr3bjpcuiobnr2zzh86tr&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Silence Don't Scare Me Anymore",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-silence-don't-scare-me-anymore-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/9wl11kdagwdsp5h8s0sy6/hello-texas-silence-dont-scare-me-anymore-mp3.mp3?rlkey=zwha59nz115icszj90blqf0xp&raw=1",
+      "title": "Dancing Through My Dreams",
+      "artist": "Hello Texas",
+      "album": "Day To Day (The Lost Tapes)",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-dancing-through-my-dreams-lost-sessions-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1",
       "videos": []
     },
     {
       "title": "Good Intentions",
+      "artist": "Hello Texas",
       "album": "Messin' Round",
-      "cover": "images/covers/hello-texas-good-intentions-cover.png",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-good-intentions-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/u37w7hmokzzdfcm0vglu8/Good-Intentions-Song.mp3?rlkey=74jx6hxyuv9f4celr47njbiy1&raw=1",
       "videos": []
     },
     {
       "title": "This Booze is Broken",
+      "artist": "Hello Texas",
       "album": "Messin' Round",
-      "cover": "images/covers/hello-texas-this-booze-is-broken-cover.png",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-this-booze-is-broken-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/v8mn75tboxgxebgug1fnr/This-Booze-is-Broken-MP3.mp3?rlkey=x9im6yhdnn0orkkpnqzhesbxw&raw=1",
       "videos": []
     },
     {
       "title": "All Hat No Shit",
+      "artist": "Hello Texas",
       "album": "TeXXXas Tales",
-      "cover": "images/covers/hello-texas-all-hat-cover.png",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-all-hat-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/r0o5eulpngk4bc8vrg24z/All-Hat-No-Shit-Mastered-MP3.mp3?rlkey=r7k5x75qyptl0a8skymgldqs5&raw=1",
       "videos": []
     },
     {
       "title": "F**k Them Fish",
+      "artist": "Hello Texas",
       "album": "TeXXXas Tales",
-      "cover": "images/covers/hello-texas-ftf-cover.png",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-ftf-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/5mbg7m39b8o9d2266ibqn/FTFish-Explicit-Version-Mastered-MP3.mp3?rlkey=f680osf7p18sdx95ztqn7wm86&raw=1",
       "videos": []
     },
     {
-      "title": "No Hand-Jobs in the Parking Lot",
-      "album": "TeXXXas Tales",
-      "cover": "images/covers/hello-texas-parking-lot-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/i9rul4r1awlw2dahuc41y/Parking-Lot-Mastered-MP3.mp3?rlkey=30hc9af5e6hpkk0yzxjgaz4d5&raw=1",
-      "videos": []
-    },
-    {
       "title": "Go F**k Yourself",
+      "artist": "Hello Texas",
       "album": "TeXXXas Tales",
-      "cover": "images/covers/hello-texas-go-fuck-yourself-cover.png",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-go-fuck-yourself-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/znlwjq81fdtgn00v41uhb/hello-texas-go-fuck-yourself-mp3-v1.mp3?rlkey=agrm2w5nnlpriepepgu95ivp0&raw=1",
       "videos": []
     },
     {
-      "title": "Dancing Through My Dreams",
-      "album": "Day To Day (The Lost Tapes)",
-      "cover": "images/covers/hello-texas-dancing-through-my-dreams-lost-sessions-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1",
+      "title": "No Hand-Jobs in the Parking Lot",
+      "artist": "Hello Texas",
+      "album": "TeXXXas Tales",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-parking-lot-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/i9rul4r1awlw2dahuc41y/Parking-Lot-Mastered-MP3.mp3?rlkey=30hc9af5e6hpkk0yzxjgaz4d5&raw=1",
+      "videos": []
+    },
+    {
+      "title": "5 Hours 8 Minutes",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-5-hours-8-minutes-cover.jpg",
+      "audioSrc": "https://www.dropbox.com/scl/fi/pddstqkzmdos6qh2eb4s1/5-Hours-8-Minutes-Acoustic-MP3.mp3?rlkey=mmu4xr3bjpcuiobnr2zzh86tr&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Bullets on the Bible",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-bullets-on-the-bible-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/zqd2j3q8qwp0ar6xqqy8l/Bullets-on-the-Bible-Mastered-MP3.mp3?rlkey=xumwau0hjs5mrnnjh1rh2rytd&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Fade Out",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-fade-out-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/hplti274nd8jvrfc5su1i/Fade-Out-MASTERED-MP3.mp3?rlkey=sy6wkqhe15gtjp7b1tl87i8ni&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Happily Ever After",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-happily-ever-after-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Same Damn Band",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-same-damn-band-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/emu7122b7nqxd9hz9v5c6/Same-Damn-Band-1.mp3?rlkey=7c9by9hu7rzss5b542nfq2dc9&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Silence Don't Scare Me Anymore",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-silence-don't-scare-me-anymore-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/9wl11kdagwdsp5h8s0sy6/hello-texas-silence-dont-scare-me-anymore-mp3.mp3?rlkey=zwha59nz115icszj90blqf0xp&raw=1",
+      "videos": []
+    },
+    {
+      "title": "That Texas Sound",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-that-texas-sound-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/3sc72tdzvu913t0se9567/Hello-Texas-That-Texas-Sound-Released-MP3.mp3?rlkey=b9sybqjdutyplwqmat72bnn82&raw=1",
       "videos": []
     }
   ]
