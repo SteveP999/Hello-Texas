@@ -16,7 +16,13 @@
       "album": "That Texas Sound",
       "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-that-texas-sound-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/3sc72tdzvu913t0se9567/Hello-Texas-That-Texas-Sound-Released-MP3.mp3?rlkey=b9sybqjdutyplwqmat72bnn82&raw=1",
-      "videos": []
+      "videos": [
+        {
+          "title": "That Texas Sound",
+          "youtube": "https://youtu.be/ikCK6zmT0yM",
+          "order": 3
+        }
+      ]
     },
     {
       "title": "Same Damn Band",
