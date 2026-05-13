@@ -24,7 +24,13 @@
       "album": "That Texas Sound",
       "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-same-damn-band-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/emu7122b7nqxd9hz9v5c6/Same-Damn-Band-1.mp3?rlkey=7c9by9hu7rzss5b542nfq2dc9&raw=1",
-      "videos": []
+      "videos": [
+        {
+          "title": "Same Damn Band",
+          "youtube": "https://youtu.be/UGzt6yG8ohE",
+          "order": 2
+        }
+      ]
     },
     {
       "title": "Bullets on the Bible",
