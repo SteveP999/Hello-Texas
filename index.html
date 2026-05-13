@@ -378,17 +378,21 @@ a{color:inherit}
 .photo-strip.empty{display:none}
 
 .video-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:1.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
   padding:1.5rem;
+  max-width:920px;
+  margin:0 auto;
 }
 .video-card{
   display:block;
+  width:100%;
   text-decoration:none;
   color:inherit;
   border:1px solid var(--line);
   background:rgba(0,0,0,.22);
+  box-shadow:0 22px 80px rgba(0,0,0,.42);
   transition:transform .2s,border-color .2s,background .2s;
 }
 .video-card:hover{
@@ -409,9 +413,9 @@ a{color:inherit}
 }
 .video-card-title{
   font-family:'Bebas Neue',serif;
-  font-size:1.2rem;
+  font-size:clamp(1.35rem,2.2vw,1.85rem);
   color:var(--white);
-  padding:1rem 1rem .15rem;
+  padding:1.15rem 1.25rem .2rem;
   text-transform:uppercase;
 }
 .video-card-actions{
@@ -849,6 +853,8 @@ footer{
 
   .release-wall{grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:1rem}
   .release-card{max-width:none}
+  .video-grid{padding:1rem;gap:1.35rem}
+  .feature-video{width:min(920px,96vw)}
   #albums,.lower-video-section,#bio,.photo-strip,footer{background-attachment:scroll}
   .photo-strip{grid-template-columns:1fr;height:auto}
   .photo-strip img{height:340px}
