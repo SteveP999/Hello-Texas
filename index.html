@@ -317,6 +317,17 @@ a{color:inherit}
     var(--video-bg) center center / cover fixed no-repeat,
     var(--black);
 }
+.video-divider-header{
+  background:color-mix(in srgb,var(--black) 92%, transparent);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:2.35rem 2rem 2.1rem;
+  margin-bottom:3rem;
+  backdrop-filter:blur(6px);
+}
+.video-divider-header .section-title{
+  font-size:clamp(1.85rem,3.2vw,3rem);
+}
 .feature-video{position:relative;z-index:3;width:min(920px,86vw);margin:0 auto}
 .video-panel{
   background:rgba(0,0,0,.16);
@@ -348,20 +359,19 @@ a{color:inherit}
 #bio{
   position:relative;
   background:
-    linear-gradient(to bottom,rgba(0,0,0,.34),rgba(0,0,0,.54)),
-    var(--discography-bg) center center / cover fixed no-repeat,
-    transparent;
+    linear-gradient(to bottom,rgba(0,0,0,.42),rgba(0,0,0,.58)),
+    var(--video-bg) center center / cover fixed no-repeat,
+    var(--black);
   padding-bottom:5rem;
   border-top:1px solid var(--faded-line);
   border-bottom:1px solid var(--faded-line);
   z-index:1;
 }
 .bio-inner{max-width:760px;margin:0 auto;padding:0 2rem;text-align:center}
-.bio-logo{margin-bottom:2rem}
-.bio-logo img{height:140px;max-width:min(720px,90vw);object-fit:contain;mix-blend-mode:screen;filter:brightness(1.16) drop-shadow(0 0 18px var(--accent-glow))}
+.bio-logo{display:none}
 .bio-inner p{color:var(--muted);line-height:1.95;font-size:1.02rem;margin-bottom:1.2rem}
 
-.photo-strip{display:grid;grid-template-columns:repeat(3,1fr);height:360px;overflow:hidden;border-top:1px solid var(--line)}
+.photo-strip{display:grid;grid-template-columns:repeat(3,1fr);height:360px;overflow:hidden;border-top:1px solid var(--line);background:var(--video-bg) center center / cover fixed no-repeat}
 .photo-strip img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.76) saturate(.88);transition:filter .4s,transform .5s}
 .photo-strip img:hover{filter:brightness(1) saturate(1);transform:scale(1.03)}
 .photo-strip img.missing{display:none}
@@ -432,8 +442,16 @@ a{color:inherit}
 .p-extra{display:flex;align-items:center;gap:.8rem}
 #volume{width:90px;accent-color:var(--accent)}
 
-footer{background:var(--black);border-top:1px solid var(--line);padding:4rem 2rem 3rem;text-align:center}
-.foot-logo{height:92px;width:auto;max-width:520px;object-fit:contain;opacity:.9;mix-blend-mode:screen}
+footer{
+  background:
+    linear-gradient(to bottom,rgba(0,0,0,.36),rgba(0,0,0,.64)),
+    var(--video-bg) center center / cover fixed no-repeat,
+    var(--black);
+  border-top:1px solid var(--line);
+  padding:3.2rem 2rem 3.6rem;
+  text-align:center;
+}
+.foot-logo{height:110px;width:auto;max-width:624px;object-fit:contain;opacity:.92;mix-blend-mode:screen}
 .foot-text{font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:1rem}
 
 
@@ -831,7 +849,7 @@ footer{background:var(--black);border-top:1px solid var(--line);padding:4rem 2re
 
   .release-wall{grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:1rem}
   .release-card{max-width:none}
-  #albums,.lower-video-section{background-attachment:scroll}
+  #albums,.lower-video-section,#bio,.photo-strip,footer{background-attachment:scroll}
   .photo-strip{grid-template-columns:1fr;height:auto}
   .photo-strip img{height:340px}
   #player{grid-template-columns:1fr;padding:.9rem 1rem}
@@ -873,7 +891,7 @@ footer{background:var(--black);border-top:1px solid var(--line);padding:4rem 2re
 
 <div id="albums"></div>
 
-<section id="video-stage" class="lower-video-section"><div class="section-header"><div class="section-eyebrow">Watch</div><h2 class="section-title">Videos</h2><div class="rule"></div></div><div class="feature-video"><div id="video-render" class="video-panel"></div></div></section>
+<section id="video-stage" class="lower-video-section"><div class="section-header video-divider-header"><h2 class="section-title">Videos</h2><div class="rule"></div></div><div class="feature-video"><div id="video-render" class="video-panel"></div></div></section>
 
 <section id="bio">
   <div class="section-header">
@@ -882,7 +900,6 @@ footer{background:var(--black);border-top:1px solid var(--line);padding:4rem 2re
     <div class="rule"></div>
   </div>
   <div class="bio-inner">
-    <div class="bio-logo"><img src="images/logos/hello-texas-logo.png" alt="Hello Texas logo" onerror="this.style.display='none'"></div>
     <p>Hello Texas is part of the Hello Texas Records roster.</p>
   </div>
 </section>
