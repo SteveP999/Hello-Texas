@@ -4,8 +4,8 @@ LOCKED RULES:
 - One architecture for all artist sites.
 - Per-artist uniqueness comes from theme, fonts, colors, logo, hero image, and copy.
 - Required folders in artist repo: images/covers/, images/logos/, images/artist/.
-- User-managed source photos live only in Hello-Texas-Records/Roster Photos/<artist-id>/.
-- Build optimizes hero/gallery photos into artist repo images/artist/ for GitHub Pages.
+- User-managed source photos live in Hello-Texas-Records/Roster Photos/<artist-id>/.
+- Build copies hero/gallery photos into artist repo images/artist/ for GitHub Pages.
 - Hero source: Roster Photos/<artist-id>/<artist-id>-hero-photo.png, aspect ratio 16:9.
 - Discography background: Roster Photos/<artist-id>/<artist-id>-discography-bg.png, aspect ratio 16:9.
 - Video background: Roster Photos/<artist-id>/<artist-id>-video-bg.png, aspect ratio 16:9.
