@@ -5,11 +5,75 @@
     "title": "Modern Man Grind",
     "artist": "Hello Texas",
     "album": "Messin' Round",
-    "cover": "images/covers/hello-texas-modern-man-grind-cover.png",
+    "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-modern-man-grind-cover.png",
     "audioSrc": "https://www.dropbox.com/scl/fi/xj3d2p0d7f7ma03673cvd/modern-man-grind-country-rock-mix.mp3?rlkey=8qjmcyci0zseojbwaru1emmg6&raw=1",
     "videos": []
   },
   "tracks": [
+    {
+      "title": "Dancing Through My Dreams",
+      "artist": "Hello Texas",
+      "album": "Day To Day (The Lost Tapes)",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-dancing-through-my-dreams-lost-sessions-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Good Intentions",
+      "artist": "Hello Texas",
+      "album": "Messin' Round",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-good-intentions-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/u37w7hmokzzdfcm0vglu8/Good-Intentions-Song.mp3?rlkey=74jx6hxyuv9f4celr47njbiy1&raw=1",
+      "videos": []
+    },
+    {
+      "title": "This Booze is Broken",
+      "artist": "Hello Texas",
+      "album": "Messin' Round",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-this-booze-is-broken-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/v8mn75tboxgxebgug1fnr/This-Booze-is-Broken-MP3.mp3?rlkey=x9im6yhdnn0orkkpnqzhesbxw&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Modern Man Grind",
+      "artist": "Hello Texas",
+      "album": "Messin' Round",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-modern-man-grind-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/xj3d2p0d7f7ma03673cvd/modern-man-grind-country-rock-mix.mp3?rlkey=8qjmcyci0zseojbwaru1emmg6&raw=1",
+      "videos": []
+    },
+    {
+      "title": "All Hat No Shit",
+      "artist": "Hello Texas",
+      "album": "TeXXXas Tales",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-all-hat-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/r0o5eulpngk4bc8vrg24z/All-Hat-No-Shit-Mastered-MP3.mp3?rlkey=r7k5x75qyptl0a8skymgldqs5&raw=1",
+      "videos": []
+    },
+    {
+      "title": "F**k Them Fish",
+      "artist": "Hello Texas",
+      "album": "TeXXXas Tales",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-ftf-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/5mbg7m39b8o9d2266ibqn/FTFish-Explicit-Version-Mastered-MP3.mp3?rlkey=f680osf7p18sdx95ztqn7wm86&raw=1",
+      "videos": []
+    },
+    {
+      "title": "No Hand-Jobs in the Parking Lot",
+      "artist": "Hello Texas",
+      "album": "TeXXXas Tales",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-parking-lot-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/i9rul4r1awlw2dahuc41y/Parking-Lot-Mastered-MP3.mp3?rlkey=30hc9af5e6hpkk0yzxjgaz4d5&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Go F**k Yourself",
+      "artist": "Hello Texas",
+      "album": "TeXXXas Tales",
+      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-go-fuck-yourself-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/znlwjq81fdtgn00v41uhb/hello-texas-go-fuck-yourself-mp3-v1.mp3?rlkey=agrm2w5nnlpriepepgu95ivp0&raw=1",
+      "videos": []
+    },
     {
       "title": "That Texas Sound",
       "artist": "Hello Texas",
@@ -82,70 +146,6 @@
       "album": "That Texas Sound",
       "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-happily-ever-after-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Good Intentions",
-      "artist": "Hello Texas",
-      "album": "Messin' Round",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-good-intentions-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/u37w7hmokzzdfcm0vglu8/Good-Intentions-Song.mp3?rlkey=74jx6hxyuv9f4celr47njbiy1&raw=1",
-      "videos": []
-    },
-    {
-      "title": "This Booze is Broken",
-      "artist": "Hello Texas",
-      "album": "Messin' Round",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-this-booze-is-broken-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/v8mn75tboxgxebgug1fnr/This-Booze-is-Broken-MP3.mp3?rlkey=x9im6yhdnn0orkkpnqzhesbxw&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Modern Man Grind",
-      "artist": "Hello Texas",
-      "album": "Messin' Round",
-      "cover": "images/covers/hello-texas-modern-man-grind-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/xj3d2p0d7f7ma03673cvd/modern-man-grind-country-rock-mix.mp3?rlkey=8qjmcyci0zseojbwaru1emmg6&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Dancing Through My Dreams",
-      "artist": "Hello Texas",
-      "album": "Day To Day (The Lost Tapes)",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-dancing-through-my-dreams-lost-sessions-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1",
-      "videos": []
-    },
-    {
-      "title": "All Hat No Shit",
-      "artist": "Hello Texas",
-      "album": "TeXXXas Tales",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-all-hat-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/r0o5eulpngk4bc8vrg24z/All-Hat-No-Shit-Mastered-MP3.mp3?rlkey=r7k5x75qyptl0a8skymgldqs5&raw=1",
-      "videos": []
-    },
-    {
-      "title": "F**k Them Fish",
-      "artist": "Hello Texas",
-      "album": "TeXXXas Tales",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-ftf-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/5mbg7m39b8o9d2266ibqn/FTFish-Explicit-Version-Mastered-MP3.mp3?rlkey=f680osf7p18sdx95ztqn7wm86&raw=1",
-      "videos": []
-    },
-    {
-      "title": "No Hand-Jobs in the Parking Lot",
-      "artist": "Hello Texas",
-      "album": "TeXXXas Tales",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-parking-lot-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/i9rul4r1awlw2dahuc41y/Parking-Lot-Mastered-MP3.mp3?rlkey=30hc9af5e6hpkk0yzxjgaz4d5&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Go F**k Yourself",
-      "artist": "Hello Texas",
-      "album": "TeXXXas Tales",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Hello-Texas/main/images/covers/hello-texas-go-fuck-yourself-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/znlwjq81fdtgn00v41uhb/hello-texas-go-fuck-yourself-mp3-v1.mp3?rlkey=agrm2w5nnlpriepepgu95ivp0&raw=1",
       "videos": []
     }
   ]
