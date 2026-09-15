@@ -2,20 +2,86 @@
   "artist": "Hello Texas",
   "latestUrl": "latest.json",
   "featuredTrack": {
-    "title": "Till Death",
+    "title": "Happily Ever After",
     "artist": "Hello Texas",
-    "album": "Messin' Round",
-    "cover": "images/covers/hello-texas-till-death-cover.png",
-    "audioSrc": "https://www.dropbox.com/scl/fi/masa847shljuyztfu42dz/hello-texas-till-Death-mp3-v1.mp3?rlkey=hol2e2uzhfqpa4bbnenu1z8om&raw=1",
+    "album": "That Texas Sound",
+    "cover": "images/covers/hello-texas-happily-ever-after-cover.png",
+    "audioSrc": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1",
     "videos": []
   },
   "tracks": [
     {
-      "title": "Dancing Through My Dreams",
+      "title": "That Texas Sound",
       "artist": "Hello Texas",
-      "album": "Day To Day (The Lost Tapes)",
-      "cover": "images/covers/hello-texas-dancing-through-my-dreams-lost-sessions-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1",
+      "album": "That Texas Sound",
+      "cover": "images/covers/hello-texas-that-texas-sound-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/3sc72tdzvu913t0se9567/Hello-Texas-That-Texas-Sound-Released-MP3.mp3?rlkey=b9sybqjdutyplwqmat72bnn82&raw=1",
+      "videos": [
+        {
+          "youtube": "https://youtu.be/ikCK6zmT0yM",
+          "title": "Official Video",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "title": "Same Damn Band",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "images/covers/hello-texas-same-damn-band-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/emu7122b7nqxd9hz9v5c6/Same-Damn-Band-1.mp3?rlkey=7c9by9hu7rzss5b542nfq2dc9&raw=1",
+      "videos": [
+        {
+          "youtube": "https://youtu.be/UGzt6yG8ohE",
+          "title": "Official Video",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "title": "Bullets on the Bible",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "images/covers/hello-texas-bullets-on-the-bible-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/zqd2j3q8qwp0ar6xqqy8l/Bullets-on-the-Bible-Mastered-MP3.mp3?rlkey=xumwau0hjs5mrnnjh1rh2rytd&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Fade Out",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "images/covers/hello-texas-fade-out-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/hplti274nd8jvrfc5su1i/Fade-Out-MASTERED-MP3.mp3?rlkey=sy6wkqhe15gtjp7b1tl87i8ni&raw=1",
+      "videos": [
+        {
+          "youtube": "https://youtu.be/PWrSeRbevPo",
+          "title": "Official Video",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "title": "5 Hours 8 Minutes",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "images/covers/hello-texas-5-hours-8-minutes-cover.jpg",
+      "audioSrc": "https://www.dropbox.com/scl/fi/pddstqkzmdos6qh2eb4s1/5-Hours-8-Minutes-Acoustic-MP3.mp3?rlkey=mmu4xr3bjpcuiobnr2zzh86tr&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Silence Don't Scare Me Anymore",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "images/covers/hello-texas-silence-don't-scare-me-anymore-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/9wl11kdagwdsp5h8s0sy6/hello-texas-silence-dont-scare-me-anymore-mp3.mp3?rlkey=zwha59nz115icszj90blqf0xp&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Happily Ever After",
+      "artist": "Hello Texas",
+      "album": "That Texas Sound",
+      "cover": "images/covers/hello-texas-happily-ever-after-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1",
       "videos": []
     },
     {
@@ -43,85 +109,19 @@
       "videos": []
     },
     {
+      "title": "Dancing Through My Dreams",
+      "artist": "Hello Texas",
+      "album": "Day To Day (The Lost Tapes)",
+      "cover": "images/covers/hello-texas-dancing-through-my-dreams-lost-sessions-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/w2hsbin8zy5qy6zutfvph/Dancing-Through-My-Dreams-Lost-Session.wav?rlkey=7ugf8qa4kjwx5upjy6z7gc7cl&raw=1",
+      "videos": []
+    },
+    {
       "title": "Till Death",
       "artist": "Hello Texas",
       "album": "Messin' Round",
       "cover": "images/covers/hello-texas-till-death-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/masa847shljuyztfu42dz/hello-texas-till-Death-mp3-v1.mp3?rlkey=hol2e2uzhfqpa4bbnenu1z8om&raw=1",
-      "videos": []
-    },
-    {
-      "title": "That Texas Sound",
-      "artist": "Hello Texas",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-that-texas-sound-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/3sc72tdzvu913t0se9567/Hello-Texas-That-Texas-Sound-Released-MP3.mp3?rlkey=b9sybqjdutyplwqmat72bnn82&raw=1",
-      "videos": [
-        {
-          "title": "That Texas Sound",
-          "youtube": "https://youtu.be/ikCK6zmT0yM",
-          "order": 3
-        }
-      ]
-    },
-    {
-      "title": "Same Damn Band",
-      "artist": "Hello Texas",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-same-damn-band-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/emu7122b7nqxd9hz9v5c6/Same-Damn-Band-1.mp3?rlkey=7c9by9hu7rzss5b542nfq2dc9&raw=1",
-      "videos": [
-        {
-          "title": "Same Damn Band",
-          "youtube": "https://youtu.be/UGzt6yG8ohE",
-          "order": 2
-        }
-      ]
-    },
-    {
-      "title": "Bullets on the Bible",
-      "artist": "Hello Texas",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-bullets-on-the-bible-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/zqd2j3q8qwp0ar6xqqy8l/Bullets-on-the-Bible-Mastered-MP3.mp3?rlkey=xumwau0hjs5mrnnjh1rh2rytd&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Fade Out",
-      "artist": "Hello Texas",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-fade-out-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/hplti274nd8jvrfc5su1i/Fade-Out-MASTERED-MP3.mp3?rlkey=sy6wkqhe15gtjp7b1tl87i8ni&raw=1",
-      "videos": [
-        {
-          "title": "Fade Out",
-          "youtube": "https://youtu.be/PWrSeRbevPo",
-          "order": 1
-        }
-      ]
-    },
-    {
-      "title": "5 Hours 8 Minutes",
-      "artist": "Hello Texas",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-5-hours-8-minutes-cover.jpg",
-      "audioSrc": "https://www.dropbox.com/scl/fi/pddstqkzmdos6qh2eb4s1/5-Hours-8-Minutes-Acoustic-MP3.mp3?rlkey=mmu4xr3bjpcuiobnr2zzh86tr&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Silence Don't Scare Me Anymore",
-      "artist": "Hello Texas",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-silence-don't-scare-me-anymore-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/9wl11kdagwdsp5h8s0sy6/hello-texas-silence-dont-scare-me-anymore-mp3.mp3?rlkey=zwha59nz115icszj90blqf0xp&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Happily Ever After",
-      "artist": "Hello Texas",
-      "album": "That Texas Sound",
-      "cover": "images/covers/hello-texas-happily-ever-after-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1",
       "videos": []
     }
   ]
