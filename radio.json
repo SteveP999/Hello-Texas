@@ -2,12 +2,18 @@
   "artist": "Hello Texas",
   "latestUrl": "latest.json",
   "featuredTrack": {
-    "title": "Happily Ever After",
+    "title": "To Ms. Jackson - With Love",
     "artist": "Hello Texas",
-    "album": "That Texas Sound",
-    "cover": "images/covers/hello-texas-happily-ever-after-cover.png",
-    "audioSrc": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1",
-    "videos": []
+    "album": "TeXXXas Tales",
+    "cover": "images/covers/hello-texas-to-ms-jackson-with-love-cover.png",
+    "audioSrc": "https://www.dropbox.com/scl/fi/4ws3w2bleliasfgwuk0xm/hello-texas-to-ms-jackson-with-love-MP3-mastered.mp3?rlkey=e38gjjqzu04hszicep8x9zfxq&raw=1",
+    "videos": [
+      {
+        "youtube": "https://youtu.be/m94nYJDBs3s?si=aEvajcNsV5nhOVQQ",
+        "title": "Official Video",
+        "order": 1
+      }
+    ]
   },
   "tracks": [
     {
@@ -18,7 +24,7 @@
       "audioSrc": "https://www.dropbox.com/scl/fi/3sc72tdzvu913t0se9567/Hello-Texas-That-Texas-Sound-Released-MP3.mp3?rlkey=b9sybqjdutyplwqmat72bnn82&raw=1",
       "videos": [
         {
-          "youtube": "https://youtu.be/ikCK6zmT0yM",
+          "youtube": "https://youtu.be/ikCK6zmT0yM?si=VRybEm1IBk-ZNgy-",
           "title": "Official Video",
           "order": 1
         }
@@ -32,7 +38,7 @@
       "audioSrc": "https://www.dropbox.com/scl/fi/emu7122b7nqxd9hz9v5c6/Same-Damn-Band-1.mp3?rlkey=7c9by9hu7rzss5b542nfq2dc9&raw=1",
       "videos": [
         {
-          "youtube": "https://youtu.be/UGzt6yG8ohE",
+          "youtube": "https://youtu.be/UGzt6yG8ohE?si=dJPr4xz36N6FFKiB",
           "title": "Official Video",
           "order": 1
         }
@@ -54,7 +60,7 @@
       "audioSrc": "https://www.dropbox.com/scl/fi/hplti274nd8jvrfc5su1i/Fade-Out-MASTERED-MP3.mp3?rlkey=sy6wkqhe15gtjp7b1tl87i8ni&raw=1",
       "videos": [
         {
-          "youtube": "https://youtu.be/PWrSeRbevPo",
+          "youtube": "https://youtu.be/PWrSeRbevPo?si=o0VVUu8A3f0flpsQ",
           "title": "Official Video",
           "order": 1
         }

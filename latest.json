@@ -1,11 +1,17 @@
 {
-  "title": "Happily Ever After",
+  "title": "To Ms. Jackson - With Love",
   "artist": "Hello Texas",
-  "album": "That Texas Sound",
+  "album": "TeXXXas Tales",
   "type": "Latest Single",
-  "cover": "images/covers/hello-texas-happily-ever-after-cover.png",
-  "image": "images/covers/hello-texas-happily-ever-after-cover.png",
-  "audio": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1",
-  "audioSrc": "https://www.dropbox.com/scl/fi/hupjoesyytssakywiqkjv/Happily-Ever-After-Mastered-MP3.mp3?rlkey=kp0csfv81xn0wqxidyfg7qn4v&raw=1",
-  "videos": []
+  "cover": "images/covers/hello-texas-to-ms-jackson-with-love-cover.png",
+  "image": "images/covers/hello-texas-to-ms-jackson-with-love-cover.png",
+  "audio": "https://www.dropbox.com/scl/fi/4ws3w2bleliasfgwuk0xm/hello-texas-to-ms-jackson-with-love-MP3-mastered.mp3?rlkey=e38gjjqzu04hszicep8x9zfxq&raw=1",
+  "audioSrc": "https://www.dropbox.com/scl/fi/4ws3w2bleliasfgwuk0xm/hello-texas-to-ms-jackson-with-love-MP3-mastered.mp3?rlkey=e38gjjqzu04hszicep8x9zfxq&raw=1",
+  "videos": [
+    {
+      "youtube": "https://youtu.be/m94nYJDBs3s?si=aEvajcNsV5nhOVQQ",
+      "title": "Official Video",
+      "order": 1
+    }
+  ]
 }
