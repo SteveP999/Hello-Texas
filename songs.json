@@ -568,7 +568,7 @@
     "albumOrder": 24,
     "albumCover": "images/covers/hello-texas-texxxas-tales-ALBUM-cover.png",
     "type": "single",
-    "isLatest": true,
+    "isLatest": false,
     "cover": "images/covers/hello-texas-to-ms-jackson-with-love-cover.png",
     "audio": "https://www.dropbox.com/scl/fi/4ws3w2bleliasfgwuk0xm/hello-texas-to-ms-jackson-with-love-MP3-mastered.mp3?rlkey=e38gjjqzu04hszicep8x9zfxq&raw=1",
     "audioSrc": "https://www.dropbox.com/scl/fi/4ws3w2bleliasfgwuk0xm/hello-texas-to-ms-jackson-with-love-MP3-mastered.mp3?rlkey=e38gjjqzu04hszicep8x9zfxq&raw=1",
@@ -580,7 +580,7 @@
       }
     ],
     "includeOnRadio": false,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {
@@ -588,5 +588,26 @@
       "apple": "",
       "youtubeMusic": ""
     }
+  },
+  {
+    "id": "hello-texas-santa-s-got-soul-by-quincy-cade",
+    "num": "01",
+    "title": "Santa's Got Soul by Quincy Cade",
+    "artist": "Hello Texas",
+    "album": "",
+    "trackNumber": 99,
+    "albumOrder": 99,
+    "albumCover": "",
+    "type": "single",
+    "isLatest": true,
+    "cover": "images/covers/hello-texas-santa-s-got-soul-by-quincy-cade-cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/j3ahjuv2eqa340hukbl5h/CHRISTMAS-Santas-Got-Soul-Quincy-Cade-MP3-mastered.mp3?rlkey=p9wm5xwjt4ii6y84bctckp26u&raw=1",
+    "audioSrc": "https://www.dropbox.com/scl/fi/j3ahjuv2eqa340hukbl5h/CHRISTMAS-Santas-Got-Soul-Quincy-Cade-MP3-mastered.mp3?rlkey=p9wm5xwjt4ii6y84bctckp26u&raw=1",
+    "videos": [],
+    "includeOnRadio": false,
+    "includeOnHomepage": true,
+    "explicit": false,
+    "tags": [],
+    "streaming": {}
   }
 ]
